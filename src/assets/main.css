@@ -1,0 +1,21 @@
+body , html {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-size: 16px;
+
+  overflow-x: clip;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 这会影响截图的文字基线 */
+img {
+  /* display: block; */
+}
