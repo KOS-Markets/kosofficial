@@ -142,8 +142,8 @@ export const useAppStore = defineStore('app', () => {
         {
           name: "announcement",
           subTitle: "announcementListSubTitle",
-          // path: "toolsAnnouncementList",
-          path: "",
+          path: "toolsAnnouncementList",
+          // path: "",
           icon: "Document",
         },
       ]

@@ -55,7 +55,7 @@ export function calculatePipSpread(decimals: number, ask: number, bid: number, r
     return pips.toString();
 }
 
-export function formatTime(time: string) {
+export function formatTime(time: string | number) {
     const store = useAppStore()
 
     if(store.systemSetting.timezone == '0'){
