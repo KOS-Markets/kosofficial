@@ -8,7 +8,7 @@
         <div class="list">
             <div class="item">
                 <img :src="icon1" alt="">
-                <div class="number">2,000,000+</div>
+                <div class="number">200,000+</div>
                 <div class="name">{{ t('homebox3Sentence2') }}</div>
                 <div class="text">{{ t('homebox3Sentence3') }}</div>
             </div>

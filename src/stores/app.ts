@@ -112,13 +112,6 @@ export const useAppStore = defineStore('app', () => {
           icon: "DataAnalysis",
         },
         {
-          name: "pamm",
-          subTitle: "pammViewSubTitle",
-          // path: "toolsPAMM",
-          path: "",
-          icon: "Notification",
-        },
-        {
           name: "tradingSignals",
           subTitle: "tradingSignalsViewSubTitle",
           // path: "toolsTradingSignals",
@@ -126,24 +119,9 @@ export const useAppStore = defineStore('app', () => {
           icon: "WindPower",
         },
         {
-          name: "socialTrading",
-          subTitle: "socialTradingViewSubTitle",
-          // path: "toolsSocialTrading",
-          path: "",
-          icon: "PieChart",
-        },
-        {
-          name: "educationAcademy",
-          subTitle: "educationAcademyViewSubTitle",
-          // path: "toolsEducationAcademy",
-          path: "",
-          icon: "School",
-        },
-        {
           name: "announcement",
           subTitle: "announcementListSubTitle",
           path: "toolsAnnouncementList",
-          // path: "",
           icon: "Document",
         },
       ]
@@ -274,13 +252,20 @@ export const useAppStore = defineStore('app', () => {
 
           //如果在中国范围设置为中文
           if(locationData.country_code == 'CN' ||
-            locationData.country_code == 'TW' ||
             locationData.country_code == 'HK' ||
             locationData.country_code == 'MO'
           ){
             let language = localStorage.getItem("lang")
             if(language == null){
               localStorage.setItem("lang", "cn")
+              location.reload()
+            }
+          }
+
+          if(locationData.country_code == 'TW'){
+            let language = localStorage.getItem("lang")
+            if(language == null){
+              localStorage.setItem("lang", "tw")
               location.reload()
             }
           }

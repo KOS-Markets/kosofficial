@@ -141,14 +141,16 @@ export const useWsConnectStore = defineStore('wsConnect', () => {
         // 接收实时quote数据
         socket.value?.on('price.update', (arr: PriceUpdate[]) => {
             arr.forEach((item) => {
-                market.value[item.symbol].bidPrice = item.bidPrice
-                market.value[item.symbol].askPrice = item.askPrice
-                market.value[item.symbol].last = item.last
-                market.value[item.symbol].symbolsize = item.symbolsize
-                market.value[item.symbol].decimals = item.decimals
-                market.value[item.symbol].up = market.value[item.symbol].bidPrice >= market.value[item.symbol].previousPrice? true : false
+                const marketItem = market.value[item.symbol]
+                if (!marketItem) return
 
-                market.value[item.symbol].previousPrice = market.value[item.symbol].bidPrice
+                marketItem.bidPrice = item.bidPrice
+                marketItem.askPrice = item.askPrice
+                marketItem.last = item.last
+                marketItem.symbolsize = item.symbolsize
+                marketItem.decimals = item.decimals
+                marketItem.up = marketItem.bidPrice >= marketItem.previousPrice
+                marketItem.previousPrice = marketItem.bidPrice
             })
         });
 

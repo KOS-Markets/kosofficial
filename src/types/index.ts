@@ -154,13 +154,13 @@ export interface AnnouncementItemType {
 }
 
 export interface NoticeItem {
-    id: string | number
-    title: string
-    content: string
-    weight: number
-    create_time: number   // 毫秒时间戳
-    update_time: number   // 毫秒时间戳
-    language_name: string // 如 'zh', 'en'
+    id: string | number;
+    title: string;
+    content: string;
+    weight: number;
+    create_time: number;
+    update_time: number;
+    language_name: string;
 }
 
 export type WorldCup2026PrizeId = number | string

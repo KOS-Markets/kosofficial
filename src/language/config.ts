@@ -13,12 +13,54 @@ export const LANGUAGE_CONFIGS = [
     shortLabel: 'ZHCN',
     isRtl: false,
   },
-  // {
-  //   code: 'ar',
-  //   label: 'عربي',
-  //   shortLabel: 'AR',
-  //   isRtl: true,
-  // },
+  {
+    code: 'tw',
+    label: '繁體中文',
+    shortLabel: 'ZHTW',
+    isRtl: false,
+  },
+  {
+    code: 'ja',
+    label: '日本語',
+    shortLabel: 'JA',
+    isRtl: false,
+  },
+  {
+    code: 'ms',
+    label: 'Bahasa Melayu',
+    shortLabel: 'MS',
+    isRtl: false,
+  },
+  {
+    code: 'ko',
+    label: '한국어',
+    shortLabel: 'KO',
+    isRtl: false,
+  },
+  {
+    code: 'id',
+    label: 'Bahasa Indonesia',
+    shortLabel: 'ID',
+    isRtl: false,
+  },
+  {
+    code: 'th',
+    label: 'ไทย',
+    shortLabel: 'TH',
+    isRtl: false,
+  },
+  {
+    code: 'vi',
+    label: 'Tiếng Việt',
+    shortLabel: 'VI',
+    isRtl: false,
+  },
+  {
+    code: 'ar',
+    label: 'عربي',
+    shortLabel: 'AR',
+    isRtl: true,
+  },
 ] as const
 
 export type AppLang = (typeof LANGUAGE_CONFIGS)[number]['code']

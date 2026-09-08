@@ -6,9 +6,8 @@ const service = axios.create({
   timeout: 50000,
 })
 
-const service2 = axios.create({
-  // baseURL: 'http://127.0.0.1:3000',
-  baseURL: 'https://webdata.kosbackenddata.com',
+const noticeService = axios.create({
+  baseURL: import.meta.env.VITE_NOTICE_API_URL || import.meta.env.VITE_BASE_URL,
   timeout: 50000,
 })
 
@@ -20,20 +19,24 @@ service.interceptors.request.use((config: InternalAxiosRequestConfig) => {
   return config
 })
 
-// 在 post 函数下方添加
+noticeService.interceptors.request.use((config: InternalAxiosRequestConfig) => {
+  config.headers.set('Accept', 'application/json')
+  return config
+})
+
 async function get<T = unknown>(
   url: string,
   params?: Record<string, unknown>,
   config?: AxiosRequestConfig,
 ): Promise<ApiResponse<T>> {
   try {
-    const response = await service2.get<ApiResponse<T>>(url, { ...config, params })
+    const response = await noticeService.get<ApiResponse<T>>(url, { ...config, params })
     return response.data
   } catch (error) {
     if (axios.isAxiosError(error)) {
       const status = error.response?.status
       if (status === 404 || status === 405) {
-        console.warn(`[api] ${status} ${url} — endpoint missing`)
+        console.warn(`[api] ${status} ${url} - endpoint missing`)
       }
       const body = error.response?.data as ApiResponse<T> | undefined
       return body ?? { code: status ?? 0, msg: error.message || 'Network Error' }

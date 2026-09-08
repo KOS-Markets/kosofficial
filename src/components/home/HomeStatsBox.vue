@@ -18,7 +18,7 @@
                     <div class="text">{{ t('homebox2Sentence3') }}</div>
                 </div>
                 <div class="item">
-                    <div class="number">10,000+</div>
+                    <div class="number">200,000+</div>
                     <div class="text">{{ t('homebox2Sentence4') }}</div>
                 </div>
             </div>

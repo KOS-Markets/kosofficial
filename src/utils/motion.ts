@@ -26,10 +26,10 @@ export const rightAnimateVariants = {
 }
 
 export const upListAnimateVariants = {
-    visible: (index: number) => ({
+    visible: (custom: unknown) => ({
         y: 0, 
         opacity: 1,
-        transition: { delay: index * 0.1, duration: 0.7 }
+        transition: { delay: (typeof custom === 'number' ? custom : 0) * 0.1, duration: 0.7 }
     }),
     hidden: { y: 100, opacity: 0 }
 }
@@ -67,10 +67,10 @@ export const opacityAnimateVariants = {
 }
 
 export const upListHoverAnimateVariants = {
-    visible: (index: number) => ({
+    visible: (custom: unknown) => ({
         y: 0,
         opacity: 1,
-        transition: { delay: index * 0.1, duration: 0.4 }
+        transition: { delay: (typeof custom === 'number' ? custom : 0) * 0.1, duration: 0.4 }
     }),
     hidden: { y: 60, opacity: 0 },
 }

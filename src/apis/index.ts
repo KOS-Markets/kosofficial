@@ -36,8 +36,11 @@ export function lotteryCodeClaim(data: { code: string }) {
     return request.post<{ id: WorldCup2026PrizeId }>('/lottery/code/claim', data)
 }
 
-// 新增：获取公告列表（分页）
-export const getNoticeList = (params: { page: number, size: number, language?: string, order_by_weight?: 'asc' | 'desc' }) => {
-  // ✅ 正确：直接传 url 和 params
-  return request.get<ApiPageData<NoticeItem>>('/public/getNoticeList', params)
+export function getNoticeList(data: {
+    page: number
+    size: number
+    language?: string
+    order_by_weight?: 'asc' | 'desc'
+}) {
+    return request.get<ApiPageData<NoticeItem>>('/public/getNoticeList', data)
 }

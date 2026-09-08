@@ -96,7 +96,9 @@ const router = createRouter({
         {
           path: '/tools/social-trading',
           name: 'toolsSocialTrading',
-          component: () => import('@/views/tools/SocialTradingView.vue'),
+          // Temporarily hidden at the user's request. Keep the legacy path safe by redirecting home.
+          redirect: '/home',
+          meta: { hidden: true },
         },
         {
           path: '/tools/education-academy',

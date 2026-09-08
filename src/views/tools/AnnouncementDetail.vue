@@ -6,48 +6,19 @@
         <div class="container" v-loading="loading">
             <div class="article-title">{{ announcement.title }}</div>
             <div class="article-content" v-html="announcement.content"></div>
-
-            <!-- <template v-else-if="announcement.type === 2 && tradingHoursContent">
-                <div class="article-title">{{ announcement.title }}</div>
-                <AnnouncementTradingHoursCard
-                    :title="displayTitle"
-                    :content="tradingHoursContent"
-                />
-            </template>
-
-            <template v-else-if="announcement.type === 3 && dividendContent">
-                <div class="article-title">{{ announcement.title }}</div>
-                <AnnouncementDividendCard
-                    :title="displayTitle"
-                    :content="dividendContent"
-                />
-            </template> -->
-
-            <!-- <div class="btn" v-if="announcement.type === 0">
-                <CustomButton :name="t('announcementDetailBtnText')" :type="0" @toPage="browserRedirection('https://hamovest.com/company/contact-us')" />
-            </div> -->
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
+import { ref, watch } from 'vue'
 import { ElMessage } from 'element-plus'
 
 import AnnouncementCarousel from '@/components/tools/AnnouncementCarousel.vue';
-import AnnouncementDividendCard from '@/components/tools/AnnouncementDividendCard.vue';
-import AnnouncementTradingHoursCard from '@/components/tools/AnnouncementTradingHoursCard.vue';
-import CustomButton from '@/components/custom/CustomButton.vue';
-
 import background from '@/assets/img/tools/announcement/bg.jpg';
 
 import { announcementUserDetail } from '@/apis/index'
-import { browserRedirection } from '@/utils/tools'
-import {
-    getAnnouncementDisplayTitle,
-    parseStructuredAnnouncementContent,
-} from '@/utils/announcementContent'
-import type { NoticeItem, DividendAdjustmentContent, TradingHoursContent } from '@/types/index'
+import type { NoticeItem } from '@/types/index'
 
 import { useRoute } from 'vue-router';
 const route = useRoute();
@@ -59,24 +30,11 @@ const announcement = ref<NoticeItem>({
     title: '',
     content: '',
     weight: 0,
-    create_time: 0,       // 毫秒时间戳
-    update_time: 0,       // 毫秒时间戳
-    language_name: '',    // 如 'zh', 'en'
+    create_time: 0,
+    update_time: 0,
+    language_name: '',
 });
 const loading = ref<boolean>(false)
-
-// const structuredContent = computed(() => parseStructuredAnnouncementContent(announcement.value))
-// const tradingHoursContent = computed(() => (
-//     structuredContent.value?.kind === 'tradingHours'
-//         ? structuredContent.value as TradingHoursContent
-//         : null
-// ))
-// const dividendContent = computed(() => (
-//     structuredContent.value?.kind === 'dividendAdjustment'
-//         ? structuredContent.value as DividendAdjustmentContent
-//         : null
-// ))
-// const displayTitle = computed(() => getAnnouncementDisplayTitle(announcement.value, structuredContent.value))
 
 const getData = async (id: string) => {
     if (!id) return
