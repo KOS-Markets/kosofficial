@@ -107,15 +107,13 @@ export const useAppStore = defineStore('app', () => {
         {
           name: "marketAnalyst",
           subTitle: "marketAnalystViewSubTitle",
-          // path: "toolsMarketAnalyst",
-          path: "",
+          path: "toolsMarketAnalyst",
           icon: "DataAnalysis",
         },
         {
           name: "tradingSignals",
           subTitle: "tradingSignalsViewSubTitle",
-          // path: "toolsTradingSignals",
-          path: "",
+          path: "toolsTradingSignals",
           icon: "WindPower",
         },
         {

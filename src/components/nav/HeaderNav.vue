@@ -12,7 +12,7 @@
                         <div class="sub-list" v-if="item.children && item.children.length > 0">
                             <div class="sub-content">
                                 <div class="sub-item" v-for="(item1, index1) in item.children" :key="index1"
-                                    @click="() => { item1.path ? router.push({ name: item1.path }) : '' }">
+                                    @click.stop="item1.path ? router.push({ name: item1.path }) : undefined">
                                     <div class="sub-item-left">
                                         <el-icon v-if="item1.icon">
                                             <component :is="item1.icon" />
@@ -90,7 +90,7 @@
                 </div>
                 <motion.div class="sub-list" :animate="item.childrenShow ? 'visible' : 'hidden'" initial="hidden" :variants="heightListAnimateVariants">
                     <div class="sub-item" v-for="(item1, index1) in item.children" :key="index1"
-                        @click="router.push({ name: item1.path });sideDrawer = false;">{{ t(item1.name) }}</div>
+                        @click.stop="router.push({ name: item1.path });sideDrawer = false;">{{ t(item1.name) }}</div>
                 </motion.div>
             </div>
             <div class="btn">
@@ -376,6 +376,7 @@ onUnmounted(() => {
                     padding: 8px;
                     border-radius: 4px;
                     font-size: 14px;
+                    cursor: pointer;
 
                     .sub-item-left {
                         margin: 2px 8px 0 0;
