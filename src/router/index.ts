@@ -147,6 +147,11 @@ const router = createRouter({
           name: 'companyFaq',
           component: () => import('@/views/company/FaqView.vue'),
         },
+        {
+          path: '/privacy-policy.html',
+          name: 'privacyPolicy',
+          component: () => import('@/views/company/PrivacyPolicyView.vue'),
+        },
 
         {
           path: '/partnership',

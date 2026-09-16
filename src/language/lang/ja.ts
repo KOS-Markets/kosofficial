@@ -22,6 +22,7 @@ export default {
   "about": "概要Kosmarkets",
   "why": "Kosmarketsを選ぶ理由",
   "legalDocuments": "法的文書",
+  "privacyPolicy": "プライバシーポリシー",
   "contactUs": "お問い合わせ",
   "career": "キャリア",
   "faq": "FAQ",

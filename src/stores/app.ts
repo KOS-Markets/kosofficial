@@ -167,6 +167,12 @@ export const useAppStore = defineStore('app', () => {
           path: "companyFaq",
           icon: "Warning",
         },
+        {
+          name: "privacyPolicy",
+          subTitle: "",
+          path: "privacyPolicy",
+          icon: "Lock",
+        },
       ]
     },
     // {

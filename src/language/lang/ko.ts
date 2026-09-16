@@ -22,6 +22,7 @@ export default {
   "about": "코스마켓 소개",
   "why": "왜 코스마켓인가",
   "legalDocuments": "법률문서",
+  "privacyPolicy": "개인정보 처리방침",
   "contactUs": "연락처",
   "career": "채용",
   "faq": "FAQ",

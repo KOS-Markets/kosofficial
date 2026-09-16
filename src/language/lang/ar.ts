@@ -25,6 +25,7 @@ export default {
   about: `عن هارموفست كابيتال`,
   why: `لماذا هارموفست كابيتال`,
   legalDocuments: `المستندات القانونية`,
+  privacyPolicy: `سياسة الخصوصية`,
   contactUs: `تواصل معنا`,
   career: `الوظائف`,
   faq: `الأسئلة الشائعة`,

@@ -25,6 +25,7 @@ export default {
   about: `關于Kosmarkets`,
   why: `為何選擇Kosmarkets`,
   legalDocuments: `法律文件`,
+  privacyPolicy: `隱私政策`,
   contactUs: `聯系我們`,
   career: `職業發展`,
   faq: `常見問題`,

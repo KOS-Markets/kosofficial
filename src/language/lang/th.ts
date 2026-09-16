@@ -22,6 +22,7 @@ export default {
   "about": "เกี่ยวกับ Kosmarkets",
   "why": "ทำไมต้อง Kosmarkets",
   "legalDocuments": "เอกสารทางกฎหมาย",
+  "privacyPolicy": "นโยบายความเป็นส่วนตัว",
   "contactUs": "ติดต่อเรา",
   "career": "อาชีพ",
   "faq": "คำถามที่พบบ่อย",

@@ -22,6 +22,7 @@ export default {
   "about": "Giới thiệu về Kosmarkets",
   "why": "Tại sao Kosmarkets",
   "legalDocuments": "Tài liệu pháp lý",
+  "privacyPolicy": "Chính sách quyền riêng tư",
   "contactUs": "Liên hệ với chúng tôi",
   "career": "Sự nghiệp",
   "faq": "Câu hỏi thường gặp",

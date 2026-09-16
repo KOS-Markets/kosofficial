@@ -22,6 +22,7 @@ export default {
   "about": "Mengenai Kosmarkets",
   "why": "Mengapa Kosmarkets",
   "legalDocuments": "Dokumen Undang-undang",
+  "privacyPolicy": "Dasar Privasi",
   "contactUs": "Hubungi Kami",
   "career": "Kerjaya",
   "faq": "Soalan Lazim",

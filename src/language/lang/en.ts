@@ -25,6 +25,7 @@ export default {
   about: `About Kosmarkets`,
   why: `Why Kosmarkets`,
   legalDocuments: `Legal Documents`,
+  privacyPolicy: `Privacy Policy`,
   contactUs: `Contact Us`,
   career: `Career`,
   faq: `FAQ`,
