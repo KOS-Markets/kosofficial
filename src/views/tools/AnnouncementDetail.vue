@@ -26,7 +26,7 @@
             </template>
 
             <div class="btn" v-if="announcement.type === 0">
-                <CustomButton :name="t('announcementDetailBtnText')" :type="0" @toPage="browserRedirection('https://hamovest.com/company/contact-us')" />
+                <CustomButton :name="t('announcementDetailBtnText')" :type="0" @toPage="browserRedirection('/company/contact-us')" />
             </div>
         </div>
     </div>

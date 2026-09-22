@@ -52,7 +52,6 @@ import { link_config } from "@/config"
 //                     {
 //                         btnText: t('platformsMT4Sentence9'),
 //                         btnClick: () => {
-//                             window.open("https://download.terminal.free/cdn/web/harmovest.capital.comoros/mt4/harmovest4setup.exe")
 //                         },
 //                     },
 //                     {
@@ -68,7 +67,6 @@ import { link_config } from "@/config"
 //                     {
 //                         btnText: t('platformsMT4Sentence12'),
 //                         btnClick: () => {
-//                             // window.open("https://download.terminal.free/cdn/mobile/mt4/android?server=Harmovest-Demo,Harmovest-Live")
 
 //                             window.open(`${window.location.origin}/metatrader4.apk`, '_blank')
 //                         },
@@ -76,7 +74,6 @@ import { link_config } from "@/config"
 //                     {
 //                         btnText: t('platformsMT4Sentence13'),
 //                         btnClick: () => {
-//                             window.location.href = 'https://download.terminal.free/cdn/mobile/mt4/ios?server=Harmovest-Demo,Harmovest-Live';
 //                         },
 //                     },
 //                 ]
@@ -132,7 +129,6 @@ const mt5 = ref<CustomMTBoxType>(
                     {
                         btnText: t('platformsMT4Sentence12'),
                         btnClick: () => {
-                            // window.open("https://download.terminal.free/cdn/mobile/mt5/android?server=Harmovest-Server")
                             window.open(link_config.mt5_android_download_link, '_blank')
                         },
                     },
