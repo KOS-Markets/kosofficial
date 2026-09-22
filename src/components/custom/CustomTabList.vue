@@ -2,13 +2,13 @@
     <div class="custom-tab-list">
         <div class="custom-tab">
             <div
-                v-for="(label, index) in tabs"
-                :key="index"
+                v-for="tab in tabs"
+                :key="tab.type"
                 class="custom-tab-item"
-                :class="{ 'active': activeTab == index }"
-                @click="changeTab(index)"
+                :class="{ 'active': activeTab == tab.type }"
+                @click="changeTab(tab.type)"
             >
-                {{ label }}
+                {{ tab.label }}
             </div>
         </div>
         <div class="custom-list">
@@ -104,12 +104,11 @@ const props = withDefaults(
 const activeTab = ref<number>(props.active)
 
 const tabs = computed(() => [
-    t('forex'),
-    t('indices'),
-    t('cryptoCFDs'),
-    t('energy'),
-    t('metals'),
-    t('shares'),
+    { label: t('forex'), type: 0 },
+    { label: t('indices'), type: 1 },
+    { label: t('energy'), type: 3 },
+    { label: t('metals'), type: 4 },
+    { label: t('shares'), type: 5 },
 ])
 
 const list = computed(() =>

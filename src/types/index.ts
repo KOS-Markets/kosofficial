@@ -110,7 +110,7 @@ export interface DividendAdjustmentContent {
 }
 
 // WebSocket / 行情
-// type: 0外汇 1指数 2加密货币cfds 3能源 4贵金属 5股票
+// type: 0外汇 1指数 3能源 4贵金属 5股票
 export interface CoinItem {
     symbol: string;
     name: string;

@@ -10,7 +10,6 @@ export default {
   stocks: `股票`,
   energy: `能源`,
   metals: `貴金屬`,
-  crypto: `加密貨幣`,
 
   tools: `交易工具`,
   marketNews: `市場資訊`,
@@ -44,7 +43,6 @@ export default {
   //Home
   trade: `交易`,
   futures: `期貨`,
-  cryptoCFDs: `加密貨幣CFDs`,
   shares: `股票`,
 
   carouselTitle: `新一代`,
@@ -381,26 +379,6 @@ export default {
   metalsTextBox9: `現貨黃金與現貨白銀在國際市場中以“美元/盎司”形式報價，表示每盎司黃金或白銀所對應的美元價格。現貨黃金的最小報價變動單位為0.01，現貨白銀為0.001。以黃金報價1930.12/1930.57為例，1930.12為賣出價（Bid），1930.57為買入價（Ask），投資者可按相應價格進行交易，此時所需支付的點差為二者差值，即0.45。再以黃金價格每盎司2,000美元為例，在1:100杠桿條件下，交易1盎司現貨黃金僅需20美元保證金。Kosmarkets提供最高可達1:2000的杠桿比例。請注意，保證金交易在提升資金使用效率的同時，亦存在放大風險的可能。`,
   metalsTextBox10: `盈虧計算`,
   metalsTextBox11: `合約價值 = 當前黃金（或白銀）價格×交易手數。以黃金報價1931.12/1930.57為例，若您以1930.57的價格買入1手黃金（1手 = 100盎司），并在價格上漲至1960.98時賣出，則盈利為（1960.98 – 1930.57×100盎司 = 3,041美元。相反，若價格跌破1930.57，則將產生相應虧損。`,
-
-  //crypto
-  cryptoViewTitle: `加密貨幣差價合約交易`,
-  cryptoViewIntro: `我們的平臺為您提供多種加密貨幣交易機會，享受超低點差與極速成交體驗。`,
-  cryptoViewSubTitle: `全天候交易主流數字資產`,
-
-  cryptoText1Box: `7×24小時市場`,
-  cryptoText1Box1: `隨時交易比特幣、以太坊等加密資產`,
-  cryptoText1Box2: `高級交易工具`,
-  cryptoText1Box3: `支持杠桿、止損與投資組合管理`,
-  cryptoText1Box4: `實時市場洞察`,
-  cryptoText1Box5: `實時圖表、新聞與專家分析`,
-
-  cryptoBoxSentence: `為何選擇Kosmarkets交易加密貨幣？`,
-  cryptoBoxSentence1: `Kosmarkets提供具競爭力的加密貨幣交易環境與成本優勢。`,
-  cryptoBoxSentence2: `加密貨幣`,
-  cryptoBoxSentence3: `加密貨幣是一種去中心化的數字資產，其價格由市場需求與新聞驅動。`,
-  cryptoBoxSentence4: `交易`,
-  cryptoBoxSentence5: `在Kosmarkets，客戶可使用美元交易加密貨幣 CFD，并靈活選擇做多或做空。`,
-
   //tools
 
   //news

@@ -21,10 +21,6 @@
               <span>{{ t('indices') }}</span>
             </div>
             <div class="trust-item">
-              <img src="@/assets/img/home/icon-crypto.png" alt="">
-              <span>{{ t('cryptoCFDs') }}</span>
-            </div>
-            <div class="trust-item">
               <img src="@/assets/img/home/icon-energy.png" alt="">
               <span>{{ t('energy') }}</span>
             </div>
@@ -187,6 +183,7 @@ import { link_config } from '@/config';
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        justify-content: space-between;
         margin-top: 32px;
 
         @media (max-width: 1100px) {

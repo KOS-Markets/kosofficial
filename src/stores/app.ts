@@ -77,12 +77,6 @@ export const useAppStore = defineStore('app', () => {
           path: "marketsMetals",
           icon: "Odometer",
         },
-        {
-          name: "crypto",
-          subTitle: "cryptoViewSubTitle",
-          path: "marketsCrypto",
-          icon: "Money",
-        },
       ]
     },
     {

@@ -64,7 +64,8 @@ const router = createRouter({
         {
           path: '/markets/crypto',
           name: 'marketsCrypto',
-          component: () => import('@/views/markets/CryptoView.vue'),
+          redirect: '/markets/forex',
+          meta: { hidden: true },
         },
 
 

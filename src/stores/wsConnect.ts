@@ -68,24 +68,6 @@ export const useWsConnectStore = defineStore('wsConnect', () => {
         { symbol: 'SPA35', name: 'SPA35', decimal: 1, type: 1, leverage: '200', tradingHours: '09:05-20:55' },
         { symbol: 'UK100', name: 'UK100', decimal: 1, type: 1, leverage: '200', tradingHours: '01:05-23:55' },
 
-
-
-
-
-        { symbol: 'XBTUSD', name: 'Bitcoin', decimal: 2, type: 2, leverage: '500', tradingHours: '00:05-24:00' },
-        { symbol: 'XETUSD', name: 'Ethereum', decimal: 2, type: 2, leverage: '500', tradingHours: '00:05-24:00' },
-        { symbol: 'SOLUSD', name: 'Solana', decimal: 2, type: 2, leverage: '500', tradingHours: '00:05-24:00' },
-
-        { symbol: 'ADAUSD', name: 'Cardano', decimal: 4, type: 2, leverage: '500', tradingHours: '00:05-24:00' },
-        { symbol: 'DOTUSD', name: 'Polkadot', decimal: 3, type: 2, leverage: '500', tradingHours: '00:05-24:00' },
-        { symbol: 'DSHUSD', name: 'Dash', decimal: 2, type: 2, leverage: '500', tradingHours: '00:05-24:00' },
-        { symbol: 'TRXUSD', name: 'TRON', decimal: 4, type: 2, leverage: '500', tradingHours: '00:05-24:00' },
-        { symbol: 'XBNUSD', name: 'Bitcoin Cash', decimal: 2, type: 2, leverage: '500', tradingHours: '00:05-24:00' },
-        { symbol: 'XLCUSD', name: 'Litecoin', decimal: 2, type: 2, leverage: '500', tradingHours: '00:05-24:00' },
-
-
-
-
         { symbol: 'XBRUSD.c', name: 'XBRUSD', decimal: 3, type: 3, leverage: '200', tradingHours: '01:05-23:55' },
         { symbol: 'XNGUSD.c', name: 'XNGUSD', decimal: 4, type: 3, leverage: '200', tradingHours: '01:05-23:55' },
         { symbol: 'XTIUSD.c', name: 'XTIUSD', decimal: 3, type: 3, leverage: '200', tradingHours: '01:05-23:55' },
@@ -113,7 +95,7 @@ export const useWsConnectStore = defineStore('wsConnect', () => {
         
         // 期货
 
-        //type: 0外汇 1指数 2加密货币cfds 3能源 4贵金属 5股票
+        // type: 0外汇 1指数 3能源 4贵金属 5股票
     ])
 
 

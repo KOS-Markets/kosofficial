@@ -810,141 +810,6 @@ right-clicking anywhere in the menu area.`,
         },
     ])
 
-    const enCryptocurrenciesList = reactive([
-        {
-            title: `1. Background - Early Digital Currencies (1980-2009)`,
-            intro: `A cryptocurrency is a digital asset engineered to function as a 
-medium of exchange. To secure their units of exchange,
- cryptocurrencies employ cryptographic protocols—elaborate code 
-systems designed to encrypt sensitive data transfers.`,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/DyurcXGd8kqga3STSEZ7A" title="1. Background - Early Digital Currencies (1980-2009)"></iframe></div>`
-        },
-        {
-            title: `2. Evolution Of Blockchain And Cryptocurrencies`,
-            intro: `A blockchain serves as a mechanism for ensuring secure online transactions. 
-Within the context of a cryptocurrency, its blockchain acts as the central 
-ledger that documents and retains historical transactions and activities. 
-This ledger validates the ownership of all units of the currency at any specific moment.`,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/xAGpFiQExUOVfoO0o1wDiA" title="2. Evolution Of Blockchain And Cryptocurrencies"></iframe></div>`
-        },
-        {
-            title: `3. The Future Of Digital Currencies And Blockchain`,
-            intro: `Following the increased fascination with Bitcoin and blockchain since 
-2009, numerous other cryptocurrencies (or tokens) have emerged.
- Currently, there are more than 850 cryptocurrencies being traded 
-globally. Litecoin, Dash, Ripple, Stratis, ZCash, and Monero are 
-notable examples of popular coins. In June 2017, the collective
- market capitalization of all cryptocurrencies surpassed $100 billion, 
-marking a significant milestone in the cryptocurrency evolution.`,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/tZyVjR60cUWOkkOY0DPQWg" title="3. The Future Of Digital Currencies And Blockchain"></iframe></div>`
-        },
-        {
-            title: `4. Background - Concept Of Owning A Digital Currency`,
-            intro: `While digital currency is in its nascent stages, its potential to shape 
-the future of financial services is significant. With the increasing 
-adoption of technologies like bitcoin, our financial system is poised to
- transition from dependence on a few large centralized institutions to 
-a model that draws strength from a vast network of peers across the globe.`,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/Uhv4SsTeUiUXAd9K476DQ" title="4. Background - Concept Of Owning A Digital Currency"></iframe></div>`
-        },
-        {
-            title: `5. What Are Wallets And How Do They Work`,
-            intro: `A wallet serves as the repository for the essential data required for conducting bitcoin transactions. Despite the common portrayal of wallets as mere repositories for housing bitcoins, the inherent structure of the system results in bitcoins being inherently intertwined with the transaction ledger known as the blockchain. A more accurate depiction of a wallet would be that of a construct responsible for "retaining the digital authentication mechanisms pertaining to one's bitcoin holdings," thereby enabling the capability to both access and utilize them.`,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/C0BzxVoCEO3iPnAAjvGdw" title="5. What Are Wallets And How Do They Work"></iframe></div>`
-        },
-        {
-            title: `6. Backups & Offline Storage - Why Is It Important, How To Do It`,
-            intro: `Modern operating systems constantly leak information without the user’s knowledge or consent.`,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/ozP3YnIuUqEtxVFBfJRTQ" title="6. Backups & Offline Storage - Why Is It Important, How To Do It"></iframe></div>`
-        },
-        {
-            title: `7. Mobile Security - How To Safely Protect Your Mobile Wallet`,
-            intro: `Your adherence to sound security practices stands as the primary bulwark safeguarding your personal information, an aspect that assumes paramount importance, particularly in the realm of online financial administration. While the initial setup might initially appear somewhat daunting, it remains incumbent upon each cryptocurrency investor to allocate time towards acquiring a profound comprehension of the optimal practices at their disposal, aimed at enhancing their self-protective measures.`,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/eTrUCURbPEikYx8nkoBZcQ" title="7. Mobile Security - How To Safely Protect Your Mobile Wallet"></iframe></div>`
-        },
-        {
-            title: `8. Types Of Crypto Currencies`,
-            intro: `Bitcoin pioneered decentralized peer-to-peer networks and established itself as the prevailing standard for cryptocurrencies. Following Bitcoin's emergence, Litecoin (2011) earned recognition as 'silver to Bitcoin's gold.' Ethereum (2015) introduced a decentralized platform enabling the creation and operation of Smart Contracts and Distributed Applications (ĐApps) devoid of third-party interference. Zcash (2016), an open-source cryptocurrency, exhibited notable potential. Dash (originally Darkcoin) enhanced privacy relative to Bitcoin through a decentralized mastercode network, ensuring nearly untraceable transactions. Ripple offered a real-time global settlement network for rapid, cost-effective international transactions. Monero, launched in April 2014, stood out as a secure, private, and untraceable open-source cryptocurrency that captured substantial attention within the cryptography community.`,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/txkrgROMrUHcJ3dYtLSAg" title="8. Types Of Crypto Currencies"></iframe></div>`
-        },
-        {
-            title: `9. What Is Bitcoin`,
-            intro: `Bitcoin is a global cryptocurrency and payment system that serves 
-as the pioneering decentralized digital currency. Operating without 
-a central repository or single administrator, the system functions in
- a decentralized manner.`,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/9FqF1Vm5g0eUC8ComqAPxQ" title="9. What Is Bitcoin"></iframe></div>`
-        },
-        {
-            title: `10. The History Of Bitcoin`,
-            intro: `Bitcoin is a global cryptocurrency and payment system that holds 
-the distinction of being the first decentralized digital currency. 
-Operating without a central repository or single administrator, the 
-system functions through a decentralized network.`,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/eacb36F570iNh9c2gK3vQ" title="10. The History Of Bitcoin"></iframe></div>`
-        },
-        {
-            title: `11. Ways To Use Bitcoin Besides Investing`,
-            intro: `The increasing popularity and limited supply of Bitcoin facilitate its 
-utilization for purchasing a wide range of goods and services
- across the world.`,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/pwF09ZVof0Kfj4Mq0vAU5Q" title="11. Ways To Use Bitcoin Besides Investing"></iframe></div>`
-        },
-        {
-            title: `12. How To Invest In Bitcoin`,
-            intro: `Certain Argentinian citizens have opted to purchase bitcoins as a 
-safeguard against substantial inflation and the potential risk of 
-government appropriation of savings accounts. Another avenue f
-or investment includes bitcoin funds.`,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/9AWWX5HFj02JwfRoPw6Nw" title="12. How To Invest In Bitcoin"></iframe></div>`
-        },
-        {
-            title: `13. What Are The Risks Involved In Bitcoin Trading`,
-            intro: `When examining historical data, it's evident that very few asset 
-classes, if any, have surpassed the performance of the stock 
-market over extended periods. Factoring in dividend reinvestment 
-and inflation, the stock market has yielded an average annual 
-return of 7%. It has consistently outperformed other assets such as gold, bonds, oil, and even real estate prices.`,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/1mHui9me0alPTK1DtY6Uw" title="13. What Are The Risks Involved In Bitcoin Trading"></iframe></div>`
-        },
-        {
-            title: `14. How To Buy Bitcoin`,
-            intro: `Purchasing cryptocurrency can be perplexing for many individuals. 
-It diverges from stocks and conventional "investments." It deviates
- from most familiar concepts. Rather than receiving shares, you 
-acquire digital coins or tokens.`,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/DG4IyYlsAEOjkOEd5aGlAw" title="14. How To Buy Bitcoin"></iframe></div>`
-        },
-        {
-            title: `15. Why Accept Bitcoin`,
-            intro: `When deliberating whether to accept Bitcoin for your business,
- it's essential to consider the advantages that this cryptocurrency 
-brings to the table.`,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/rXq8QWBsG0ymqJZo0oWlzw" title="15. Why Accept Bitcoin"></iframe></div>`
-        },
-        {
-            title: `16. What Are The Risks Involved In Using Bitcoin`,
-            intro: `It's crucial to acknowledge the potential risk posed by fraudsters who 
-might send counterfeit invoices to your customers, luring them into 
-making payments to a Bitcoin address under their control rather 
-than yours.`,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/TRZ1DmUbhkOQKvfhLuohuA" title="16. What Are The Risks Involved In Using Bitcoin"></iframe></div>`
-        },
-        {
-            title: `17. How To Accept Bitcoin For Services Or Goods`,
-            intro: `When incorporating Bitcoin acceptance into a small business, it's 
-prudent to initiate the process in a manner that maintains
- straightforward accounting practices, tailored to your specific 
-business type and operations.`,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/3hDpAaUfOke2iOTeUWfurA" title="17. How To Accept Bitcoin For Services Or Goods"></iframe></div>`
-        },
-        {
-            title: `18. Outlook On Taxation, Accounting & Legalities`,
-            intro: `None of the forthcoming information constitutes legal advice. 
-Given the array of issues discussed below, it is highly advisable to seek consultation with your accountant.`,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/bBGn4uUOXEqHEYG9kXoKw" title="18. Outlook On Taxation, Accounting & Legalities"></iframe></div>`
-        },
-    ])
 
 
     const enIntroductionToTheStockMarketList = reactive([
@@ -1707,98 +1572,6 @@ The bedrock of trend trading strategies rests on the assumption that a security 
         },
     ])
 
-    const arCryptocurrenciesList = reactive([
-        {
-            title: ` خلفية - العملات المشفرة المبكرة (1980-2009)`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/tldOFuDjUuXZeiFUUDeIA" title=" خلفية - العملات المشفرة المبكرة (1980-2009)"></iframe></div>`
-        },
-        {
-            title: ` تطور سلسلة الكتل والعملات المشفرة`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/rszR0RN1l0G9JPxrvNyxuQ" title=" تطور سلسلة الكتل والعملات المشفرة"></iframe></div>`
-        },
-        {
-            title: ` مستقبل العملات الرقمية`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/zfg4mhyfNUGeMjStJUNDw" title=" مستقبل العملات الرقمية"></iframe></div>`
-        },
-        {
-            title: ` خلفية - مفهوم امتلاك عملة مشفرة`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/tTn0HfY1JE2gsj79xVtUA" title=" خلفية - مفهوم امتلاك عملة مشفرة"></iframe></div>`
-        },
-        {
-            title: ` ما هي المحافظ وكيف تعمل`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/h61HUpUCWUe9zfssZw3dMw" title=" ما هي المحافظ وكيف تعمل"></iframe></div>`
-        },
-        {
-            title: `  النسخ الاحتياطية و التخزين أوفلاين - لماذا هو مهم و كيف تفعله`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/SBeNHNgUKEWesfAZEBwjwQ" title="  النسخ الاحتياطية و التخزين أوفلاين - لماذا هو مهم و كيف تفعله"></iframe></div>`
-        },
-        {
-            title: `الدرس الرابع: أمان الهاتف المحفظة هاتفك المحمول                `,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/AB58kAzc0yWPhr2G26XYg" title="-الدرس الرابع- أمان الهاتف المحفظة هاتفك المحمول---"></iframe></div>`
-        },
-        {
-            title: ` أنواع العملات المشفرة`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/Xb16cNOlEXWrwe1pJUQ" title=" أنواع العملات المشفرة"></iframe></div>`
-        },
-        {
-            title: ` ما هي البيتكوين ؟`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/dY9O8HsaD0iKLJCP7wjSg" title=" ما هي البيتكوين ؟"></iframe></div>`
-        },
-        {
-            title: ` تاريخ البيتكوين`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/LLOpra5gEW1IQSiJ5k6w" title=" تاريخ البيتكوين"></iframe></div>`
-        },
-        {
-            title: ` طرق لاستخدام البيتكوين بخلاف الاستثمار`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/joCzHW6x0UahaeA3LQeO5A" title=" طرق لاستخدام البيتكوين بخلاف الاستثمار"></iframe></div>`
-        },
-        {
-            title: `الدرس الرابع: استثمر في البيتكوين`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/MhQzclxLTEivtOtLlHF6Vg" title="الدرس الرابع- استثمر في البيتكوين"></iframe></div>`
-        },
-        {
-            title: `الدرس الخامس: مخاطر تجارة البيتكوين`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/M41ecHMEEOugR7rk3rqQ" title="الدرس الخامس- مخاطر تجارة البيتكوين"></iframe></div>`
-        },
-        {
-            title: ` كيف يمكنك شراء البيتكوين`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/7Id85tb1WEOzv3zohQAXsg" title=" كيف يمكنك شراء البيتكوين"></iframe></div>`
-        },
-        {
-            title: `الدرس الأول: لماذا يجب أن تقبل البيتكوين`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/uPxLbl8yi0i6vXf2r9Cf2w" title="الدرس الأول- لماذا يجب أن تقبل البيتكوين"></iframe></div>`
-        },
-        {
-            title: `الدرس 2. ما هي المخاطر التي تنطوي عليهابيتكوين`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/RBkVLmLyGEKQWDBnjzyXUw" title="الدرس 2. ما هي المخاطر التي تنطوي عليهابيتكوين"></iframe></div>`
-        },
-        {
-            title: `الدرس 3: قبول Bitcoin للسلع والخدمات`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/APGzXm0Q5Uicmy4G18cZFA" title="الدرس 3- قبول Bitcoin للسلع والخدمات"></iframe></div>`
-        },
-        {
-            title: `الدرس الرابع: النظرة الضريبية والقانونية`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/UGO5iiw0y02gQAdF0vAQ" title="الدرس الرابع- النظرة الضريبية والقانونية"></iframe></div>`
-        },
-    ])
 
 
     const arIntroductionToTheStockMarketList = reactive([
@@ -2411,98 +2184,6 @@ The bedrock of trend trading strategies rests on the assumption that a security 
         },
     ])
 
-    const cnCryptocurrenciesList = reactive([
-        {
-            title: `1. 背景 - 早期数字货币`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/GG5xhrhnlUy1EPxmvZnswA" title="1. 背景 - 早期数字货币"></iframe></div>`
-        },
-        {
-            title: `2. 区块链和加密货币的演变`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/gGheNFOqYkOFsPfnn3ribg" title="2. 区块链和加密货币的演变"></iframe></div>`
-        },
-        {
-            title: `3. 数字货币和区块链的未来`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/msBj8nFNlkOm1uUZd5dig" title="3. 数字货币和区块链的未来"></iframe></div>`
-        },
-        {
-            title: `4. 背景 - 拥有数字货币的概念`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/3zP7wFaWr0y93otNu56rWw" title="4. 背景 - 拥有数字货币的概念"></iframe></div>`
-        },
-        {
-            title: `5. 什么是钱包以及它们如何工作`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/tkgAsLfDEECXw6n0tadxWA" title="5. 什么是钱包以及它们如何工作"></iframe></div>`
-        },
-        {
-            title: `6. 备份和离线存储 - 为什么它很重要，如何做到`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/1UA3zl1IeUSChdPkxyV37Q" title="6. 备份和离线存储 - 为什么它很重要，如何做到"></iframe></div>`
-        },
-        {
-            title: `7. 移动安全 - 如何安全地保护您的移动钱包`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/GoUh04EeZkuZVLlc2B1L7A" title="7. 移动安全 - 如何安全地保护您的移动钱包"></iframe></div>`
-        },
-        {
-            title: `8. 加密货币的类型`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/SGgWJHO30iVbGcqEgr5g" title="8. 加密货币的类型"></iframe></div>`
-        },
-        {
-            title: `9. 什么是比特币？`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/Voi2UKjxqketXTZskEVqng" title="9. 什么是比特币？"></iframe></div>`
-        },
-        {
-            title: `10. 比特币的历史`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/stuaW8U2SEmMSMlqZPifZQ" title="10. 比特币的历史"></iframe></div>`
-        },
-        {
-            title: `11. 除了投资之外，比特币的使用方式`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/JrrrVThpkIQONfzzbjIQ" title="11. 除了投资之外，比特币的使用方式"></iframe></div>`
-        },
-        {
-            title: `12. 如何投资比特币`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/aB1kCfK9UKMOQLPTdGVuA" title="12. 如何投资比特币"></iframe></div>`
-        },
-        {
-            title: `13. 比特币交易涉及哪些风险`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/k5OSEh48aEqlTYqEeSgHPQ" title="13. 比特币交易涉及哪些风险"></iframe></div>`
-        },
-        {
-            title: `14. 如何购买比特币`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/MhT1L3if10GncA8W19T8DQ" title="14. 如何购买比特币"></iframe></div>`
-        },
-        {
-            title: `15. 为什么接受比特币？`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/zFyQyW8ROk2y2G5JsaIfwA" title="15. 为什么接受比特币？"></iframe></div>`
-        },
-        {
-            title: `16. 接受比特币涉及哪些风险`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/sfNGDQNtB02CNVXuOUojw" title="16. 接受比特币涉及哪些风险"></iframe></div>`
-        },
-        {
-            title: `17. 如何接受比特币支付服务或商品`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/1lwjpTrscEGkT6VuLjSw3w" title="17. 如何接受比特币支付服务或商品"></iframe></div>`
-        },
-        {
-            title: `18. 税务、会计和法律展望`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/Zm9DQoEQAE2MclmAyPCGDw" title="18. 税务、会计和法律展望"></iframe></div>`
-        },
-    ])
 
 
     const cnIntroductionToTheStockMarketList = reactive([
@@ -3109,98 +2790,6 @@ The bedrock of trend trading strategies rests on the assumption that a security 
         },
     ])
 
-    const vnCryptocurrenciesList = reactive([
-        {
-            title: `Bối cảnh – những đồng tiền điện tử đầu tiên (1980-2009)`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/nJziHbTEXrAZQHg1nJw" title="Bối cảnh – những đồng tiền điện tử đầu tiên (1980-2009)"></iframe></div>`
-        },
-        {
-            title: `Sự phát triển của blockchain và tiền điện tử`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/ZNNGC4t01Eugz3tequLg9A" title="Sự phát triển của blockchain và tiền điện tử"></iframe></div>`
-        },
-        {
-            title: `Tương lai của tiền tệ kỹ thuật số`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/tpq23unSkarBvbXUJQhEQ" title="Tương lai của tiền tệ kỹ thuật số"></iframe></div>`
-        },
-        {
-            title: `Nền tảng - Khái niệm về việc sở hữu một loại tiền kỹ thuật số`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/wrXuCR7LFk62EqoIZjO9w" title="Nền tảng - Khái niệm về việc sở hữu một loại tiền kỹ thuật số"></iframe></div>`
-        },
-        {
-            title: `Ví" Wallet là gì và chúng hoạt động như thế nào`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/X8zc1gRpBkqmL2Zv08XeuA" title="Ví- Wallet là gì và chúng hoạt động như thế nào"></iframe></div>`
-        },
-        {
-            title: `Sao lưu & Lưu trữ ngoại tuyến - tại sao nó quan trọng, làm thế nào để làm điều đó?`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/9p8JFPlM4E2yYuQ1U2v6Mw" title="Sao lưu & Lưu trữ ngoại tuyến - tại sao nó quan trọng, làm thế nào để làm điều đó-"></iframe></div>`
-        },
-        {
-            title: `Bảo mật trực tuyến: cách bảo vệ ví di động của bạn một cách an toàn`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/gPgwmki2N0eg6igb0kArcg" title="Bảo mật trực tuyến- cách bảo vệ ví di động của bạn một cách an toàn"></iframe></div>`
-        },
-        {
-            title: `Các loại tiền điện tử`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/G13tId1cEOCuSZApQkA0A" title="Các loại tiền điện tử"></iframe></div>`
-        },
-        {
-            title: `Bitcoin là gì?`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/vdj3CtNSJEmDheR5btmg" title="Bitcoin là gì-"></iframe></div>`
-        },
-        {
-            title: `Lịch sử của bitcoin`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/UabIyJg47kCRMsDbTEP0Iw" title="Lịch sử của bitcoin"></iframe></div>`
-        },
-        {
-            title: `Cách sử dụng bitcoin bên cạnh việc đầu tư`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/VHMKIagYzkuGzsLX2h2mww" title="Cách sử dụng bitcoin bên cạnh việc đầu tư"></iframe></div>`
-        },
-        {
-            title: `Cách đầu tư vào Bitcoin`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/RVO86EIVw0W3wNvT0eLmYg" title="Cách đầu tư vào Bitcoin"></iframe></div>`
-        },
-        {
-            title: `Rủi ro liên quan đến giao dịch bitcoin là gì`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/Cx9qLTfi0G0PuFj2NJ66w" title="Những rủi ro liên quan đến việc chấp nhận bitcoin là gì-"></iframe></div>`
-        },
-        {
-            title: `Cách mua Bitcoin`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/yiglv7rNUyHWvj5NrIrw" title="Cách mua Bitcoin"></iframe></div>`
-        },
-        {
-            title: `Tại sao phải chấp nhận bitcoin?`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/ehvccb1Wk6KrnhLDfE6Jw" title="Tại sao phải chấp nhận bitcoin-"></iframe></div>`
-        },
-        {
-            title: `Những rủi ro liên quan đến việc chấp nhận bitcoin là gì?`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/TBYyAXFN6kSs0DyOc0S9mg" title="Rủi ro liên quan đến giao dịch bitcoin là gì"></iframe></div>`
-        },
-        {
-            title: `Cách chấp nhận Bitcoin`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/NV3DN8cf8Ua9bMgXvOtIsA" title="Cách chấp nhận Bitcoin"></iframe></div>`
-        },
-        {
-            title: `Triển vọng về Thuế và Pháp lý`,
-            intro: ``,
-            content: `<div style="position:relative;width:100%;overflow:hidden;padding-top:56.25%"><iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none" allow="autoplay; fullscreen" allowfullscreen src="https://videos.dyntube.com/iframes/61XfgPAkwUC0rINEKybPA" title="Triển vọng về Thuế và Pháp lý"></iframe></div>`
-        },
-    ])
 
 
     const vnIntroductionToTheStockMarketList = reactive([
@@ -3502,11 +3091,6 @@ The bedrock of trend trading strategies rests on the assumption that a security 
                     intro: '',
                     list: enMT4List
                 },
-                {
-                    title: 'Cryptocurrencies',
-                    intro: 'Learn how to trade cryptocurrencies, its trading methodology and sharpen your trading skills in this unique and innovative asset.',
-                    list: enCryptocurrenciesList
-                },
             ]
         },
         {
@@ -3588,11 +3172,6 @@ The bedrock of trend trading strategies rests on the assumption that a security 
                     title: `MT4`,
                     intro: ``,
                     list: arMT4List
-                },
-                {
-                    title: `العملات المشفرة`,
-                    intro: ``,
-                    list: arCryptocurrenciesList
                 },
             ]
         },
@@ -3676,11 +3255,6 @@ The bedrock of trend trading strategies rests on the assumption that a security 
                     intro: ``,
                     list: cnMT4List
                 },
-                {
-                    title: `Cryptocurrencies`,
-                    intro: ``,
-                    list: cnCryptocurrenciesList
-                },
             ]
         },
         {
@@ -3761,11 +3335,6 @@ The bedrock of trend trading strategies rests on the assumption that a security 
                     title: `MT4`,
                     intro: ``,
                     list: vnMT4List
-                },
-                {
-                    title: `Tiền điện tử`,
-                    intro: ``,
-                    list: vnCryptocurrenciesList
                 },
             ]
         },
@@ -3906,14 +3475,6 @@ The bedrock of trend trading strategies rests on the assumption that a security 
     // ])
 
     // const enMT4List = reactive([
-    //     {
-    //         title: ``,
-    //         intro: ``,
-    //         content: ``
-    //     },
-    // ])
-
-    // const enCryptocurrenciesList = reactive([
     //     {
     //         title: ``,
     //         intro: ``,
