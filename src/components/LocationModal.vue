@@ -17,16 +17,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-
 import { usePageSettingsStore } from '@/stores/pageSettings'
 const pageSettingsStore = usePageSettingsStore()
-
-const link = ref<string>(import.meta.env.VITE_ATWEB)
-
-const goToLink = () => {
-    window.open("https://" + import.meta.env.VITE_ATWEB + "/", '_self')
-}
 </script>
 
 <style lang="scss" scoped>

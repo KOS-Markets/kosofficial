@@ -40,7 +40,7 @@ export const useWsConnectStore = defineStore('wsConnect', () => {
         { symbol: 'NZDCHF.c', name: 'NZDCHF', decimal: 5, type: 0, leverage: '200-2000', tradingHours: '0:05-23:55' },
         { symbol: 'NZDJPY.c', name: 'NZDJPY', decimal: 3, type: 0, leverage: '200-2000', tradingHours: '0:05-23:55' },
         { symbol: 'NZDSGD.c', name: 'NZDSGD', decimal: 5, type: 0, leverage: '200-2000', tradingHours: '0:05-23:55' },
-        { symbol: 'NDZUSD.c', name: 'NDZUSD', decimal: 5, type: 0, leverage: '200-2000', tradingHours: '0:05-23:55' },
+        { symbol: 'NZDUSD.c', name: 'NZDUSD', decimal: 5, type: 0, leverage: '200-2000', tradingHours: '0:05-23:55' },
         { symbol: 'USDCAD.c', name: 'USDCAD', decimal: 5, type: 0, leverage: '200-2000', tradingHours: '0:05-23:55' },
         { symbol: 'USDCHN.c', name: 'USDCHN', decimal: 5, type: 0, leverage: '200-2000', tradingHours: '0:05-23:55' },
         { symbol: 'USDHKD.c', name: 'USDHKD', decimal: 5, type: 0, leverage: '200-2000', tradingHours: '0:05-23:55' },
@@ -141,14 +141,17 @@ export const useWsConnectStore = defineStore('wsConnect', () => {
         // 接收实时quote数据
         socket.value?.on('price.update', (arr: PriceUpdate[]) => {
             arr.forEach((item) => {
-                market.value[item.symbol].bidPrice = item.bidPrice
-                market.value[item.symbol].askPrice = item.askPrice
-                market.value[item.symbol].last = item.last
-                market.value[item.symbol].symbolsize = item.symbolsize
-                market.value[item.symbol].decimals = item.decimals
-                market.value[item.symbol].up = market.value[item.symbol].bidPrice >= market.value[item.symbol].previousPrice? true : false
+                const quote = market.value[item.symbol]
+                if (!quote) return
 
-                market.value[item.symbol].previousPrice = market.value[item.symbol].bidPrice
+                const previousPrice = quote.bidPrice
+                quote.bidPrice = item.bidPrice
+                quote.askPrice = item.askPrice
+                quote.last = item.last
+                quote.symbolsize = item.symbolsize
+                quote.decimals = item.decimals
+                quote.up = item.bidPrice >= previousPrice
+                quote.previousPrice = item.bidPrice
             })
         });
 
@@ -165,7 +168,7 @@ export const useWsConnectStore = defineStore('wsConnect', () => {
     }
 
     const subscribePrice = (type: number) => {
-        let list: string[] = []
+        const list: string[] = []
         coinList.value.forEach((item) => {
             if(item.type == type){
                 if(!roomList.value.includes(`price:${item.symbol}`))

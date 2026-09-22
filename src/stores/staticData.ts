@@ -1,4 +1,4 @@
-import { ref, computed, reactive } from 'vue'
+import { reactive, ref } from 'vue'
 import { defineStore } from 'pinia'
 
 import type { CustomBoxType } from '@/types/index'
@@ -11,7 +11,7 @@ import yes from '@/assets/img/trading/account/yes.svg?raw'
 import no from '@/assets/img/trading/account/no.svg?raw'
 
 import { useI18n } from 'vue-i18n'
-import ar from '@/language/lang/ar'
+import { educationLocales } from './educationLocales'
 
 
 export const useStaticDataStore = defineStore('staticData', () => {
@@ -3806,6 +3806,13 @@ The bedrock of trend trading strategies rests on the assumption that a security 
         en: enEducationAcademyList,
         ar: arEducationAcademyList,
         cn: cnEducationAcademyList,
+        tw: cnEducationAcademyList,
+        ja: educationLocales.ja,
+        ms: educationLocales.ms,
+        ko: educationLocales.ko,
+        id: educationLocales.id,
+        th: educationLocales.th,
+        vi: vnEducationAcademyList,
         vn: vnEducationAcademyList
     })
 

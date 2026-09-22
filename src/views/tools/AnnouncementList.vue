@@ -4,7 +4,7 @@
             :background="background"/>
 
         <div class="list" v-loading="loading">
-            <AnnouncementItem v-for="(item, key) in dataList" :title="item.title" :time="formatTime(item.create_time)" @click="clickAnnouncement(item)" />
+            <AnnouncementItem v-for="item in dataList" :key="item.id" :title="item.title" :time="formatTime(item.created_at)" @click="clickAnnouncement(item)" />
             <el-empty v-if="dataList.length == 0" :description="t('nodata')" />
             <div class="pagination">
                 <el-pagination layout="prev, pager, next" :total="total"
@@ -24,16 +24,16 @@ import AnnouncementItem from '@/components/tools/AnnouncementItem.vue';
 
 import background from '@/assets/img/tools/announcement/bg.jpg';
 
-import { announcementUserList, getNoticeList } from '@/apis/index'
+import { announcementUserList } from '@/apis/index'
 import { formatTime, editImageUrl } from '@/utils/tools'
-import type { NoticeItem } from '@/types/index'
+import type { AnnouncementItemType } from '@/types/index'
 
 import { useRouter } from 'vue-router';
 const router = useRouter();
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
-const dataList = ref<NoticeItem[]>([]);
+const dataList = ref<AnnouncementItemType[]>([]);
 const loading = ref<boolean>(false)
 const page = ref<number>(1);
 const size = ref<number>(10);
@@ -43,62 +43,25 @@ onBeforeMount(()=>{
     getData()
 })
 
-// (1, 'en', '英语'),
-// (2, 'zh-Hans', '简体中文'),
-// (3, 'zh-Hant', '繁体中文'),
-// (4, 'ja', '日语'),
-// (5, 'ms', '马来语'),
-// (6, 'ko', '韩语'),
-// (7, 'id', '印尼语'),
-// (8, 'th', '泰语'),
-// (9, 'vi', '越南语'),
-// (10, 'ar', '阿拉伯语');
-// 语言映射
-const language_map = new Map([
-    ['en', 'en'],
-    ['cn', 'zh-Hans'],
-    ['tw', 'zh-Hant'],
-    ['ja', 'ja'],
-    ['ms', 'ms'],
-    ['ko', 'ko'],
-    ['id', 'id'],
-    ['th', 'th'],
-    ['vi', 'vi'],
-    ['ar', 'ar'],
-]);
-
-function getLangaugeValue() {
-    const language_k = localStorage.getItem('lang') ?? 'en';
-    return language_map.get(language_k) || 'en';
-}
-
 const getData = async () => {
   loading.value = true
-//   const res = await announcementUserList({ page: page.value, size: size.value })
-    // 获取当前处于什么语言
-    const language_v = getLangaugeValue();
-    const res = await getNoticeList({
-        page: page.value,
-        size: size.value,
-        language: language_v,
-        order_by_weight: 'desc'   // 如果需要按权重排序，可放开此参数
-    })
+  const res = await announcementUserList({ page: page.value, size: size.value })
 
-    if (res.code == 200 && res.data) {
-        dataList.value = res.data?.list ?? []
-        total.value = res.data?.total
-    } else {
-        ElMessage.error(res.msg || '加载失败')
-    }
-    loading.value = false
+  if (res.code == 200 && res.data) {
+    dataList.value = res.data.list ?? []
+    total.value = res.data.total
+  } else {
+    ElMessage.error(res.msg)
+  }
+  loading.value = false
 }
 
 
-const clickAnnouncement = (item: NoticeItem) => {
-    // if (item.type == 1) {
-        // window.open(editImageUrl(item.content), "_blank")
-        // return
-    // }
+const clickAnnouncement = (item: AnnouncementItemType) => {
+    if (item.type == 1) {
+        window.open(editImageUrl(item.content), "_blank")
+        return
+    }
 
     router.push({name: 'toolsAnnouncementDetail', query: {id: item.id}})
 }

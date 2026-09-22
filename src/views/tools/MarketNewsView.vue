@@ -60,11 +60,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onBeforeMount, watch } from 'vue'
-import axios from 'axios'
+import { ref, onBeforeMount } from 'vue'
 
 import CustomCarousel from '@/components/custom/CustomCarousel.vue';
-import CustomButton from '@/components/custom/CustomButton.vue'
 
 import { iframeNews } from '@/apis/index'
 import { browserRedirection } from '@/utils/tools'
@@ -77,22 +75,12 @@ import { useAppStore } from '@/stores/app'
 const store = useAppStore()
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
-import { usePageSettingsStore } from '@/stores/pageSettings'
-const pageSettingsStore = usePageSettingsStore()
 
 const loading = ref<boolean>(true)
 const address = ref<string>('')
 
-const list = ref<any>([])
-const linkList = ref<string[]>(['https://videos.tradingcentral.com/v2/playlists/CBHwkOqa?format=json','https://videos.tradingcentral.com/v2/playlists/bYWRudo5?format=json'])
-
 onBeforeMount(() => {
     getAddress()
-    getLinkJSON()
-})
-
-watch(() => pageSettingsStore.lang, () => {
-    getLinkJSON()
 })
 
 const handleLoad = () => {
@@ -108,27 +96,6 @@ const getAddress = async () => {
 }
 
 
-const getLinkJSON = async() => {
-    try {
-        loading.value = true
-        let link: any = ''
-
-        if (pageSettingsStore.lang != 'ar')
-            link = linkList.value[0]
-        else
-            link = linkList.value[1]
-
-        const res = await axios.get(link)
-
-        list.value = res.data.playlist
-
-
-    } catch (error) {
-        // console.error('请求失败：', error)
-    } finally {
-        loading.value = false
-    }
-}
 </script>
 
 <style lang="scss" scoped>

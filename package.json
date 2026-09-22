@@ -1,5 +1,5 @@
 {
-  "name": "web-kos-markets",
+  "name": "Kosmarkets",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -16,6 +16,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
     "axios": "^1.4.0",
     "bignumber.js": "^9.3.1",
     "dayjs": "^1.11.12",

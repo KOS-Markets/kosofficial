@@ -112,20 +112,20 @@ const textList = ref<CustomBoxItemType[]>([
 ])
 
 const levelValue = ref<number>(0)
-const levelOptions = [
+const levelOptions = computed(() => [
     {
-        label: 'Basic',
+        label: t('newEducationAcademyBoxSentence'),
         value: '',
     },
     {
-        label: 'Intermediate',
+        label: t('newEducationAcademyBoxSentence2'),
         value: '',
     },
     {
-        label: 'Advanced',
+        label: t('newEducationAcademyBoxSentence4'),
         value: '',
     }
-]
+])
 
 const firstListValue = ref<number>(0)
 const secondListValue = ref<number>(1)

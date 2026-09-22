@@ -200,8 +200,8 @@ const changeTab = (num: number) => {
 }
 </style> -->
 
-<template></template>
+<template><span v-if="false"></span></template>
 
-<script setup></script>
+<script setup lang="ts"></script>
 
 <style scoped></style>

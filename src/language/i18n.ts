@@ -2,9 +2,16 @@ import { createI18n } from 'vue-i18n'
 
 import { normalizeLang, DEFAULT_LANG, type AppLang } from './config'
 
-const langLoaders: Record<AppLang, () => Promise<{ default: Record<string, any> }>> = {
+const langLoaders: Record<AppLang, () => Promise<{ default: Record<string, string> }>> = {
   en: () => import('./lang/en'),
   cn: () => import('./lang/cn'),
+  tw: () => import('./lang/tw'),
+  ja: () => import('./lang/ja'),
+  ms: () => import('./lang/ms'),
+  ko: () => import('./lang/ko'),
+  id: () => import('./lang/id'),
+  th: () => import('./lang/th'),
+  vi: () => import('./lang/vi'),
   ar: () => import('./lang/ar'),
 }
 

@@ -112,13 +112,6 @@ export const useAppStore = defineStore('app', () => {
           icon: "DataAnalysis",
         },
         {
-          name: "pamm",
-          subTitle: "pammViewSubTitle",
-          // path: "toolsPAMM",
-          path: "",
-          icon: "Notification",
-        },
-        {
           name: "tradingSignals",
           subTitle: "tradingSignalsViewSubTitle",
           // path: "toolsTradingSignals",
@@ -126,24 +119,10 @@ export const useAppStore = defineStore('app', () => {
           icon: "WindPower",
         },
         {
-          name: "socialTrading",
-          subTitle: "socialTradingViewSubTitle",
-          // path: "toolsSocialTrading",
-          path: "",
-          icon: "PieChart",
-        },
-        {
-          name: "educationAcademy",
-          subTitle: "educationAcademyViewSubTitle",
-          // path: "toolsEducationAcademy",
-          path: "",
-          icon: "School",
-        },
-        {
           name: "announcement",
           subTitle: "announcementListSubTitle",
-          path: "toolsAnnouncementList",
-          // path: "",
+          // path: "toolsAnnouncementList",
+          path: "",
           icon: "Document",
         },
       ]
@@ -227,7 +206,7 @@ export const useAppStore = defineStore('app', () => {
     //locationDate：位置保存日期
     //locationEU：位置是否在欧盟或者另外19个国家，是则为true，否则为false
 
-    let locationDate = localStorage.getItem('locationDate');
+    const locationDate = localStorage.getItem('locationDate');
 
     //判断今天是否获取过信息
     const today = new Date().toDateString();
@@ -243,7 +222,7 @@ export const useAppStore = defineStore('app', () => {
     let locationEU = localStorage.getItem('locationEU');
     if(locationEU == null){
       try {
-        let response = await fetch('https://ipapi.co/json/')
+        const response = await fetch('https://ipapi.co/json/')
         locationData = await response.json()
         //判断是否在欧盟或者另外19个国家内
         if(locationData.in_eu == true || 
@@ -274,19 +253,26 @@ export const useAppStore = defineStore('app', () => {
 
           //如果在中国范围设置为中文
           if(locationData.country_code == 'CN' ||
-            locationData.country_code == 'TW' ||
             locationData.country_code == 'HK' ||
             locationData.country_code == 'MO'
           ){
-            let language = localStorage.getItem("lang")
+            const language = localStorage.getItem("lang")
             if(language == null){
               localStorage.setItem("lang", "cn")
               location.reload()
             }
           }
 
+          if(locationData.country_code == 'TW'){
+            const language = localStorage.getItem("lang")
+            if(language == null){
+              localStorage.setItem("lang", "tw")
+              location.reload()
+            }
+          }
 
-        } catch (err) {
+
+        } catch {
           // console.error('位置获取失败:', err)
           // error.value = err.message || '网络请求失败，请检查连接'
           locationEU = '1'

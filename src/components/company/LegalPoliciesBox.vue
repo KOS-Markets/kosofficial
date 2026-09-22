@@ -2,8 +2,8 @@
     <div class="legal-documents-box">
         <div class="container">
             <div class="text">{{ t('legalDocumentsBoxSentence') }}</div>
-            <div v-if="pageSettingsStore.lang != 'cn'" class="title">{{ t('legalDocumentsBoxSentence1') }}</div>
-            <div v-if="pageSettingsStore.lang != 'cn'" class="text">{{ t('legalDocumentsBoxSentence2') }}</div>
+            <div v-if="!['cn', 'tw'].includes(pageSettingsStore.lang)" class="title">{{ t('legalDocumentsBoxSentence1') }}</div>
+            <div v-if="!['cn', 'tw'].includes(pageSettingsStore.lang)" class="text">{{ t('legalDocumentsBoxSentence2') }}</div>
             <div class="title">{{ t('legalDocumentsBoxSentence3') }}</div>
             <div class="text">{{ t('legalDocumentsBoxSentence4') }}</div>
             <div class="title">{{ t('legalDocumentsBoxSentence5') }}</div>
@@ -23,8 +23,6 @@ import { ref } from 'vue'
 
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
-import { useAppStore } from '@/stores/app'
-const store = useAppStore()
 import { usePageSettingsStore } from '@/stores/pageSettings'
 const pageSettingsStore = usePageSettingsStore()
 

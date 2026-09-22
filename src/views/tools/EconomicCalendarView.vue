@@ -29,7 +29,6 @@
 import { onBeforeMount, ref } from 'vue'
 
 import CustomCarousel from '@/components/custom/CustomCarousel.vue';
-import CustomButton from '@/components/custom/CustomButton.vue'
 
 import { browserRedirection } from '@/utils/tools'
 import { iframeCalendar } from '@/apis/index'
