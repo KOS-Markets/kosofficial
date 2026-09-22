@@ -28,7 +28,7 @@ export default {
   "login": "로그인",
   "register": "회원가입",
   "language": "언어",
-  "footerContent": "<p><strong>시장 위험:</strong> 금융 시장 거래에는 기회가 있지만 상당한 손실 위험도 따릅니다. 위험을 충분히 이해하고 감당할 수 없는 자금으로 거래하지 마십시오.</p>\n    <p><strong>면책 조항:</strong> 파생상품은 높은 레버리지를 수반할 수 있으며 모든 투자자에게 적합하지 않을 수 있습니다. 이 웹사이트의 자료는 일반적인 정보 제공만을 목적으로 하며 금융 조언이 아닙니다. 또한 개인의 목표, 재정 상황 또는 필요를 고려하지 않습니다. 수수료, 이자, 플랫폼 비용 및 기타 비용이 적용될 수 있습니다.</p>\n    <p><strong>서비스 이용 가능 여부:</strong> 이 웹사이트에 표시된 상품, 기능 및 결제 방법은 지역에 따라 다를 수 있습니다. 관련 서비스에 대한 접근과 이용이 거주 지역에서 허용되는지는 방문자가 직접 확인해야 합니다.</p>",
+  "footerContent": "<p><strong>시장 위험:</strong> 금융 시장 거래에는 기회가 있지만 상당한 손실 위험도 따릅니다. 위험을 충분히 이해하고 감당할 수 없는 자금으로 거래하지 마십시오.</p>\n    <p><strong>면책 조항:</strong> 파생상품은 높은 레버리지를 수반할 수 있으며 모든 투자자에게 적합하지 않을 수 있습니다. 이 웹사이트의 자료는 일반적인 정보 제공만을 목적으로 하며 금융 조언이 아닙니다. 또한 개인의 목표, 재정 상황 또는 필요를 고려하지 않습니다. 수수료, 이자, 플랫폼 비용 및 기타 비용이 적용될 수 있습니다.</p>\n    <p><strong>서비스 이용 가능 여부:</strong> 이 웹사이트에 표시된 상품, 기능 및 결제 방법은 지역에 따라 다를 수 있습니다. 관련 서비스에 대한 접근과 이용이 거주 지역에서 허용되는지는 방문자가 직접 확인해야 합니다.</p>\n    <p><strong>www.kosmarkets.com</strong> 도메인은 KOS Markets Limited가 운영합니다.</p>\n    <p>KOS Markets Limited는 등록번호 2026-00467로 세인트루시아에 법인입니다. 등록된 주소는 Ground Floor, The Sotheby Building, Rodney Bay, Gros-Islet, Saint Lucia입니다. 실제 주소는 477/34 Sutthiporn Soi, Prachasongkhro 2 Road, Din Daeng Subdistrict, Din Daeng District, Bangkok, Thai입니다.</p>",
   "copyright": "Copyright © 2026 코스마켓. All Rights Reserved.",
   "trade": "거래",
   "futures": "선물",

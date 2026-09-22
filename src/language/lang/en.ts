@@ -37,7 +37,9 @@ export default {
 
   footerContent: `<p><strong>Market Risk:</strong> Trading in financial markets offers potential opportunities but also involves a significant risk of loss. Make sure you understand the risks and never trade with money you cannot afford to lose.</p>
     <p><strong>Disclaimer:</strong> Derivative products can be highly leveraged and may not be suitable for every investor. The material on this website is for general information only. It is not financial advice and does not consider your objectives, financial situation, or individual needs. Commissions, interest, platform fees, and other costs may apply.</p>
-    <p><strong>Service Availability:</strong> Products, features, and payment methods shown on this website may vary by location. Visitors are responsible for confirming that access to and use of the relevant services are permitted in their location.</p>`,
+    <p><strong>Service Availability:</strong> Products, features, and payment methods shown on this website may vary by location. Visitors are responsible for confirming that access to and use of the relevant services are permitted in their location.</p>
+    <p>The domain <strong>www.kosmarkets.com</strong> is operated by KOS Markets Limited.</p>
+    <p>KOS Markets Limited is incorporated in St Lucia with registration number 2026-00467. The registered address is Ground Floor, The Sotheby Building, Rodney Bay, Gros-Islet, Saint Lucia. The physical address is 477/34 Sutthiporn Soi, Prachasongkhro 2 Road, Din Daeng Subdistrict, Din Daeng District, Bangkok, Thailand.</p>`,
   copyright: 'Copyright © 2026 KOSMARKETS. All Rights Reserved.',
 
   //Home

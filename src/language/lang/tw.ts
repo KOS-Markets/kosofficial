@@ -37,7 +37,9 @@ export default {
 
   footerContent: `<p><strong>市場風險：</strong>金融市場交易可能帶來機會，也伴隨重大虧損風險。請在充分了解風險後審慎交易，切勿投入無法承受損失的資金。</p>
     <p><strong>免責聲明：</strong>衍生產品通常具有較高槓桿，未必適合所有投資者。本網站內容僅供一般資訊參考，不構成財務或投資建議，也未考慮您的個人目標、財務狀況或需求。交易可能產生佣金、利息、平台費用及其他成本。</p>
-    <p><strong>服務可用性：</strong>網站展示的產品、功能及付款方式可能因地區而異。訪客應自行確認其所在地是否允許存取及使用相關服務。</p>`,
+    <p><strong>服務可用性：</strong>網站展示的產品、功能及付款方式可能因地區而異。訪客應自行確認其所在地是否允許存取及使用相關服務。</p>
+    <p>網域 <strong>www.kosmarkets.com</strong> 由 KOS Markets Limited 營運。</p>
+    <p>KOS Markets Limited 在聖盧西亞註冊成立，註冊號為 2026-00467。註冊地址為：Ground Floor, The Sotheby Building, Rodney Bay, Gros-Islet, Saint Lucia。實際辦公地址為：477/34 Sutthiporn Soi, Prachasongkhro 2 Road, Din Daeng Subdistrict, Din Daeng District, Bangkok, Thailand。</p>`,
   copyright: '版權所有 ? 2026 KOSMARKETS 保留所有權利。',
 
   //Home
