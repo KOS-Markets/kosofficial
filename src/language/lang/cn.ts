@@ -36,17 +36,9 @@ export default {
 
   language: `语言`,
 
-  footerContent: `
-    <p><strong>市场风险：</strong>在金融市场中交易具有巨大的潜在回报，但也伴随着巨大的潜在风险。您必须充分了解这些风险，并愿意承担这些风险，才能在市场进行投资。请勿使用您无法承受损失的资金进行投资或交易。外汇交易在某些国家是不被允许的，在投资您的资金之前，请务必确认您的国家是否允许此类交易。</p>
-    <p><strong>免责声明：</strong>衍生品具有高杠杆、高风险的特点，可能不适合所有投资者。本网站上的资料仅供说明用途和一般信息参考，不构成财务建议，也未考虑您的投资目标、财务状况或特定需求。KOS Markets Limited 提供的金融产品或服务可能涉及佣金、利息、平台费、股息、变动保证金及其他费用和收费。本网站上的信息不面向某些司法管辖区的居民，也不打算向任何司法管辖区内的任何个人或实体分发或供其使用，如果此类分发或使用可能违反该司法管辖区的任何当地法律或法规。访问本网站的人是出于自己的主动意愿。本发布内容不构成任何交易邀请。</p>
-    <p>网站<strong>www.kosmarkets.com</strong>由KOS Markets Limited运营。</p>
-    <p>KOS Markets Limited 在圣卢西亚注册成立，注册号为 2026-00467。注册地址为：Ground Floor, The Sotheby Building, Rodney Bay, Gros-Islet, Saint Lucia。实际办公地址为：477/34 Sutthiporn Soi, Prachasongkhro 2 Road, Din Daeng Subdistrict, Din Daeng District, Bangkok, Thailand。</p>
-    <p>
-      <div>关联实体：</div>
-      <div>KOS CAPITAL (AU) PTY LTD 由澳大利亚证券与投资委员会（ASIC） 许可和监管，牌照编号：001322591。</div>
-      <div>注册地址：111 STURT ST ADELAIDE SA 5000 AUSTRALIA。</div>
-    </p>
-  `,
+  footerContent: `<p><strong>市场风险：</strong>金融市场交易可能带来机会，也伴随重大亏损风险。请在充分了解风险后谨慎交易，切勿投入无法承受损失的资金。</p>
+    <p><strong>免责声明：</strong>衍生品通常具有较高杠杆，并不适合所有投资者。本网站内容仅供一般信息参考，不构成财务或投资建议，也未考虑您的个人目标、财务状况或需求。交易可能产生佣金、利息、平台费用及其他成本。</p>
+    <p><strong>服务可用性：</strong>网站展示的产品、功能及支付方式可能因地区而异。访问者应自行确认其所在地是否允许访问和使用相关服务。</p>`,
   copyright: '版权所有 © 2026 KOSMARKETS 保留所有权利。',
 
   //Home
@@ -62,8 +54,8 @@ export default {
 
   homeboxSentence: `卓越交易环境`,
   homeboxSentence1: `携手Kosmarkets，征战全球投资市场`,
-  homeboxSentence2: `多重监管`,
-  homeboxSentence3: `Kosmarkets受全球多家权威监管机构监管`,
+  homeboxSentence2: `先进交易技术`,
+  homeboxSentence3: `借助直观平台、专业工具和稳定的全球市场接入，把握交易机会`,
   homeboxSentence4: `超低点差`,
   homeboxSentence5: `提供低至0的紧密点差`,
   homeboxSentence6: `覆盖250+种差价合约产品`,
@@ -527,7 +519,7 @@ export default {
 
   aboutBox1Sentence: `通往全球交易市场的可靠桥梁。`,
   aboutBox1Sentence1: `Kosmarkets是一家领先的投资服务提供商，致力于为交易者与投资者提供顺畅、高效的交易体验，涵盖外汇、股票、大宗商品、指数等250+种差价合约产品。平台由经验丰富的金融专家与富有远见的企业家团队打造，旨在提供快速、安全且直观的世界级交易环境。`,
-  aboutBox1Sentence2: `KOS Capital (AU) Pty Ltd是一家在澳大利亚证券与投资委员会（ASIC）注册的澳大利亚专有有限公司，澳大利亚公司编号（ACN）为700 868 766，并以AFS授权代表身份运营，代表编号为001322591。`,
+  aboutBox1Sentence2: `我们的技术整合了直观的交易平台、响应迅速的工具和丰富的市场产品，帮助客户在一个平台内轻松管理交易体验。`,
   aboutBox1Sentence3: `点击此处预览<strong>公司简介</strong>`,
 
   aboutBox2Sentence: `我们的愿景`,
@@ -536,8 +528,8 @@ export default {
   aboutBox2Sentence3: `我们坚信金融机遇应当触手可及。我们的使命是通过提供前沿交易工具、专业市场洞察与专属支持，赋能客户以更智慧、更高效、更自信的方式参与交易。`,
   aboutBox2Sentence4: `我们的核心价值`,
   aboutBox2Sentence5: `创新：我们不断突破边界，提供极速执行、直观界面与顺畅的交易解决方案，全面提升您的交易体验。`,
-  aboutBox2Sentence6: `安全：您的资金与信息安全始终是我们的首要任务。我们遵循全球最高标准的数据保护与金融合规要求，确保您的资产与隐私始终受到保障。`,
-  aboutBox2Sentence7: `透明：我们以高度透明与诚信运营，严格遵守监管要求，始终将客户利益置于首位。`,
+  aboutBox2Sentence6: `安全：我们采用实用的防护措施和负责任的数据处理方式，为账户信息提供支持与保护。`,
+  aboutBox2Sentence7: `透明：我们清晰说明服务、费用和交易条件，并在每项决策中重视客户需求。`,
 
   //why
   whyViewTitle: `为什么选择Kosmarkets`,
@@ -551,7 +543,7 @@ export default {
   whyBox1Sentence: `高杠杆`,
   whyBox1Sentence1: `低点差`,
   whyBox1Sentence2: `多元化交易产品`,
-  whyBox1Sentence3: `严格监管`,
+  whyBox1Sentence3: `技术实力`,
   whyBox1Sentence4: `深度流动性`,
 
   whyBox2Sentence: `在Kosmarkets交易，您可享受卓越的订单执行体验。`,
@@ -567,20 +559,20 @@ export default {
   whyBox3Sentence5: `不断增长的活跃交易账户数量，体现了全球交易者对我们平台的信任与认可。`,
   whyBox3Sentence6: `7×24 小时多语言支持`,
   whyBox3Sentence7: `我们的专业客服团队全天候在线，提供多语言专家级支持，全程为您的交易保驾护航。`,
-  whyBox3Sentence8: `持牌合规 · 安全保障`,
-  whyBox3Sentence9: `KOS Capital (AU) Pty Ltd是一家在澳大利亚证券与投资委员会（ASIC）注册的澳大利亚专有有限公司，澳大利亚公司编号（ACN）为700 868 766，并以AFS授权代表身份运营，代表编号为001322591。`,
+  whyBox3Sentence8: `为更佳交易体验而设计`,
+  whyBox3Sentence9: `从灵活的账户选项到直观的平台和实用的市场工具，我们专注于让交易旅程的每个环节都清晰、高效且易于管理。`,
   whyBox3Sentence10: `我们的承诺`,
-  whyBox3Sentence11: `我们不仅是一家经纪商，更是您在金融市场中的长期战略伙伴。通过领先的交易基础设施、透明安全的运营体系以及以客户为核心的服务理念，我们确保每一位交易者，无论经验水平如何，都能享受更智能、更安全、更具价值的交易体验。`,
+  whyBox3Sentence11: `我们致力于成为您探索金融市场时的实用伙伴。通过现代化交易基础设施、清晰的运营方式和以客户为中心的服务，我们为不同经验水平的交易者提供做出理性决策所需的工具与支持。`,
 
   //legal documents
   legalDocumentsViewTitle: `法律文件`,
-  legalDocumentsViewSubTitle: `协议、政策及监管信息`,
+  legalDocumentsViewSubTitle: `协议、政策及重要账户信息`,
 
   legalDocumentsBoxSentence: `Kosmarkets是全球领先的高质量外汇交易经纪商之一，致力于为全球机构及零售客户提供优质的在线外汇及大宗商品交易服务。作为一家长期稳健经营的金融服务公司，Kosmarkets多银行报价终端可为您提供具竞争力的报价及高质量的交易执行速度。同时，我们亦提供更灵活的杠杆选择。在您于Kosmarkets开立真实交易账户前，请务必仔细阅读并充分理解以下法律声明文件。`,
   legalDocumentsBoxSentence1: `对冲政策`,
   legalDocumentsBoxSentence2: `特此提醒您，在包括外汇市场、场外外汇期权及差价合约（CFD）等部分市场中，我们可能以“做市商（Market Maker）”身份参与交易，即为促进相关金融工具的交易，我们可能持有一定数量的受支持金融工具，并通过在线交易平台提供“买价”和“卖价”报价，或从自有库存中执行订单，或寻求对冲订单。您理解并接受，在我们作为做市商的市场中，我们可能持有与您或其他客户相反的交易头寸，从而可能产生潜在的利益冲突。由此产生的佣金、隔夜利息、点差中包含的相关成本及其他费用，均可能影响您的交易结果，并可能对您的交易表现产生不利影响。`,
-  legalDocumentsBoxSentence3: `客户资金存管`,
-  legalDocumentsBoxSentence4: `所有客户资金均独立、安全地存放于客户隔离账户中，与公司运营资金完全分离。Kosmarkets严格执行客户资金隔离制度，并全面遵守相关监管要求。所有客户资金均接受每日银行审计与清算。请注意，客户存放的资金仅可用于履行交易保证金义务，不会用于支付公司经营相关支出，例如租金、水电费或员工薪资。`,
+  legalDocumentsBoxSentence3: `账户资金操作`,
+  legalDocumentsBoxSentence4: `您可以通过客户门户中提供的支付方式提交入金和出金申请。处理时间、费用和可用性可能因支付方式及地区而异。提交前请仔细核对信息，并确保支付账户姓名与您的Kosmarkets账户一致。如需协助，请联系客服。`,
   legalDocumentsBoxSentence5: `追加保证金通知`,
   legalDocumentsBoxSentence6: `Kosmarkets自动运行“追加保证金”机制，以协助客户降低账户出现负余额的风险。为持续持仓或正常交易，您的账户净值须维持在当前持仓保证金的50%以上。当净值低于该标准时，系统将优先平仓对您最不利的仓位。在强制平仓前，当账户净值下降至所需保证金的70%时，交易平台将发出风险预警提示。在市场剧烈波动期间，尤其是在重要数据公布（如非农就业数据、美联储利率决议等）时，可能产生额外风险。周末持仓亦可能因跳空行情触发追加保证金机制。`,
   legalDocumentsBoxSentence7: `投诉处理`,
@@ -610,8 +602,8 @@ export default {
   faqBoxSentence4: `请登录客户后台（CRM）提交杠杆变更申请。在提交申请前，请确保账户内所有持仓已全部平仓并结算。Kosmarkets在收到您的申请后，将于1–2个工作日内完成内部处理。申请获批后，您将通过电子邮件收到通知。外汇交易的高杠杆与低保证金特性，可能因价格剧烈波动而导致重大损失。客户须始终满足持仓所需的最低保证金要求，并有责任不时监控账户余额及可用保证金。一旦维持持仓所需的最低保证金不足，Kosmarkets有权对客户账户中的任何或全部持仓进行强制平仓。`,
   faqBoxSentence5: `3. 什么是第三方？`,
   faqBoxSentence6: `当向Kosmarkets交易账户进行入金或出金操作时，若资金转入或转出的银行账户名称与Kosmarkets交易账户名称不一致，则将被视为第三方入金或第三方出金。此类情况包括但不限于：银行账户名称与Kosmarkets交易账户名称不一致、使用公司银行账户为Kosmarkets个人交易账户入金、汇款支票背书人名称与Kosmarkets交易账户名称不一致等。为遵守国际反洗钱公约，Kosmarkets在任何情况下均不接受第三方入金或第三方出金。`,
-  faqBoxSentence7: `4. Kosmarkets如何保障客户资金安全？`,
-  faqBoxSentence8: `Kosmarkets严格执行客户资金隔离制度，所有客户资金均实行独立管理，并存放于独立的客户资金银行账户中。Kosmarkets资产充足，管理能力稳健，严格遵守监管要求，并已购买专业责任保险（PI 保险），覆盖公司及客户资金。即使公司出现财务问题，客户资金亦可获得全额赔付，确保存放于Kosmarkets的客户资金绝对安全。Kosmarkets致力于提供高度透明的服务，每日向客户发送交易报告，并提供实时入金及出金交易执行确认。`,
+  faqBoxSentence7: `4. 如何提升账户安全性？`,
+  faqBoxSentence8: `请使用独立密码，启用所有可用的安全功能，并且不要向任何人透露登录信息或验证码。定期检查账户活动，并在提交申请前核对入金和出金信息。如发现陌生活动或收到可疑消息，请立即通过官方网站联系Kosmarkets客服。`,
   faqBoxSentence9: `5. 出金是否会产生相关费用？`,
   faqBoxSentence10: `根据反洗钱政策，未进行任何交易的账户在出金时需额外收取 2.5% 的手续费，且接收出金的银行账户持有人姓名必须与Kosmarkets交易账户持有人姓名一致。`,
   faqBoxSentence11: `6. 汇入的资金何时到账我的交易账户？`,

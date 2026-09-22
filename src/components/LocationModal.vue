@@ -5,9 +5,8 @@
             <div class="location-modal-content">
                 <div style="margin: 0 0 20px;">
                     <p>We have detected that you are visiting from Europe.</p>
-                    <p>To comply with regulatory requirements, you will be redirected to kosmarkets.com, which is operated
-                        by Kosmarkets (CYPRUS) LTD, authorized and regulated by the Cyprus Securities and
-                        Exchange Commission (CYSEC) under license number 411/22.</p>
+                    <p>You will be redirected to kosmarkets.com to view the services and information available for your
+                        location.</p>
                     <p>You will be automatically redirected in 5 seconds.</p>
                 </div>
                 <!-- <el-button type="primary" style="width: 100%;font-size: 18px;height: 45px;" @click="goToLink">Visit {{ link }}</el-button> -->
