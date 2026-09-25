@@ -1,0 +1,71 @@
+"use strict";
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var vue_1 = require("vue");
+var vue_i18n_1 = require("vue-i18n");
+var t = (0, vue_i18n_1.useI18n)().t;
+var link = (0, vue_1.ref)(import.meta.env.VITE_WEB_EMAIL);
+var __VLS_ctx = __assign(__assign({}, {}), {});
+var __VLS_components;
+var __VLS_intrinsics;
+var __VLS_directives;
+/** @type {__VLS_StyleScopedClasses['title']} */ ;
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)(__assign({ class: "partnership-box" }));
+/** @type {__VLS_StyleScopedClasses['partnership-box']} */ ;
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)(__assign({ class: "partnership-box-header" }));
+/** @type {__VLS_StyleScopedClasses['partnership-box-header']} */ ;
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)(__assign({ class: "title" }));
+/** @type {__VLS_StyleScopedClasses['title']} */ ;
+(__VLS_ctx.t('partnershipBox2Sentence'));
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)(__assign({ class: "intro" }));
+/** @type {__VLS_StyleScopedClasses['intro']} */ ;
+(__VLS_ctx.t('partnershipBox2Sentence1'));
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)(__assign({ class: "partnership-box-list" }));
+/** @type {__VLS_StyleScopedClasses['partnership-box-list']} */ ;
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)(__assign({ class: "item" }));
+/** @type {__VLS_StyleScopedClasses['item']} */ ;
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)(__assign({ class: "number" }));
+/** @type {__VLS_StyleScopedClasses['number']} */ ;
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)(__assign({ class: "title" }));
+/** @type {__VLS_StyleScopedClasses['title']} */ ;
+(__VLS_ctx.t('partnershipBox2Sentence2'));
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)(__assign({ class: "text" }));
+/** @type {__VLS_StyleScopedClasses['text']} */ ;
+(__VLS_ctx.t('partnershipBox2Sentence3'));
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)(__assign({ class: "item" }));
+/** @type {__VLS_StyleScopedClasses['item']} */ ;
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)(__assign({ class: "number" }));
+/** @type {__VLS_StyleScopedClasses['number']} */ ;
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)(__assign({ class: "title" }));
+/** @type {__VLS_StyleScopedClasses['title']} */ ;
+(__VLS_ctx.t('partnershipBox2Sentence4'));
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)(__assign({ class: "text" }));
+/** @type {__VLS_StyleScopedClasses['text']} */ ;
+(__VLS_ctx.t('partnershipBox2Sentence5'));
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)(__assign({ class: "item" }));
+/** @type {__VLS_StyleScopedClasses['item']} */ ;
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)(__assign({ class: "number" }));
+/** @type {__VLS_StyleScopedClasses['number']} */ ;
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)(__assign({ class: "title" }));
+/** @type {__VLS_StyleScopedClasses['title']} */ ;
+(__VLS_ctx.t('partnershipBox2Sentence6'));
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)(__assign({ class: "text" }));
+/** @type {__VLS_StyleScopedClasses['text']} */ ;
+(__VLS_ctx.t('partnershipBox2Sentence7'));
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)(__assign({ class: "tips" }));
+/** @type {__VLS_StyleScopedClasses['tips']} */ ;
+(__VLS_ctx.t('partnershipBox2Sentence8', { email: __VLS_ctx.link }));
+// @ts-ignore
+[t, t, t, t, t, t, t, t, t, link,];
+var __VLS_export = (await Promise.resolve().then(function () { return require('vue'); })).defineComponent({});
+exports.default = {};

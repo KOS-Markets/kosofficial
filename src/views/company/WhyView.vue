@@ -90,7 +90,7 @@ const textList = ref<CustomBoxItemType[]>([
         text: t('whyBoxSentence'),
     },
     {
-        title: '200,000+',
+        title: '200,000',
         text: t('whyBoxSentence1'),
     },
     {

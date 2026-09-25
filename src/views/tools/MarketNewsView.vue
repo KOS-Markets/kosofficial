@@ -48,7 +48,7 @@
                 scrolling="no"
                 allowtransparency="true"
                 frameborder="0"
-                src="https://www.tradingview-widget.com/embed-widget/timeline/#%7B%22displayMode%22%3A%22regular%22%2C%22colorTheme%22%3A%22light%22%2C%22isTransparent%22%3Afalse%2C%22width%22%3A1080%2C%22height%22%3A800%2C%22utm_source%22%3A%22www.gvdmarkets.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22timeline%22%2C%22page-uri%22%3A%22www.gvdmarkets.com%2Fmarket-news%2F%22%7D"
+                src="https://www.tradingview-widget.com/embed-widget/timeline/#%7B%22displayMode%22%3A%22regular%22%2C%22colorTheme%22%3A%22light%22%2C%22isTransparent%22%3Afalse%2C%22width%22%3A1080%2C%22height%22%3A800%2C%22utm_source%22%3A%22www.kosmarkets.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22timeline%22%2C%22page-uri%22%3A%22www.kosmarkets.com%2Fmarket-news%2F%22%7D"
                 title="timeline TradingView widget"
                 lang="en"></iframe>
 
@@ -60,9 +60,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onBeforeMount } from 'vue'
+import { ref, onBeforeMount, watch } from 'vue'
+import axios from 'axios'
 
 import CustomCarousel from '@/components/custom/CustomCarousel.vue';
+import CustomButton from '@/components/custom/CustomButton.vue'
 
 import { iframeNews } from '@/apis/index'
 import { browserRedirection } from '@/utils/tools'
@@ -75,12 +77,22 @@ import { useAppStore } from '@/stores/app'
 const store = useAppStore()
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
+import { usePageSettingsStore } from '@/stores/pageSettings'
+const pageSettingsStore = usePageSettingsStore()
 
 const loading = ref<boolean>(true)
 const address = ref<string>('')
 
+const list = ref<any>([])
+const linkList = ref<string[]>(['https://videos.tradingcentral.com/v2/playlists/CBHwkOqa?format=json','https://videos.tradingcentral.com/v2/playlists/bYWRudo5?format=json'])
+
 onBeforeMount(() => {
     getAddress()
+    getLinkJSON()
+})
+
+watch(() => pageSettingsStore.lang, () => {
+    getLinkJSON()
 })
 
 const handleLoad = () => {
@@ -96,6 +108,27 @@ const getAddress = async () => {
 }
 
 
+const getLinkJSON = async() => {
+    try {
+        loading.value = true
+        let link: any = ''
+
+        if (pageSettingsStore.lang != 'ar')
+            link = linkList.value[0]
+        else
+            link = linkList.value[1]
+
+        const res = await axios.get(link)
+
+        list.value = res.data.playlist
+
+
+    } catch (error) {
+        // console.error('请求失败：', error)
+    } finally {
+        loading.value = false
+    }
+}
 </script>
 
 <style lang="scss" scoped>

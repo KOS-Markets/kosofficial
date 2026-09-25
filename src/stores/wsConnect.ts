@@ -40,7 +40,7 @@ export const useWsConnectStore = defineStore('wsConnect', () => {
         { symbol: 'NZDCHF.c', name: 'NZDCHF', decimal: 5, type: 0, leverage: '200-2000', tradingHours: '0:05-23:55' },
         { symbol: 'NZDJPY.c', name: 'NZDJPY', decimal: 3, type: 0, leverage: '200-2000', tradingHours: '0:05-23:55' },
         { symbol: 'NZDSGD.c', name: 'NZDSGD', decimal: 5, type: 0, leverage: '200-2000', tradingHours: '0:05-23:55' },
-        { symbol: 'NZDUSD.c', name: 'NZDUSD', decimal: 5, type: 0, leverage: '200-2000', tradingHours: '0:05-23:55' },
+        { symbol: 'NDZUSD.c', name: 'NDZUSD', decimal: 5, type: 0, leverage: '200-2000', tradingHours: '0:05-23:55' },
         { symbol: 'USDCAD.c', name: 'USDCAD', decimal: 5, type: 0, leverage: '200-2000', tradingHours: '0:05-23:55' },
         { symbol: 'USDCHN.c', name: 'USDCHN', decimal: 5, type: 0, leverage: '200-2000', tradingHours: '0:05-23:55' },
         { symbol: 'USDHKD.c', name: 'USDHKD', decimal: 5, type: 0, leverage: '200-2000', tradingHours: '0:05-23:55' },
@@ -67,6 +67,24 @@ export const useWsConnectStore = defineStore('wsConnect', () => {
         { symbol: 'HK50', name: 'HK50', decimal: 1, type: 1, leverage: '200', tradingHours: '04:20-07:00；08:00-11:30；12:15-21:45' },
         { symbol: 'SPA35', name: 'SPA35', decimal: 1, type: 1, leverage: '200', tradingHours: '09:05-20:55' },
         { symbol: 'UK100', name: 'UK100', decimal: 1, type: 1, leverage: '200', tradingHours: '01:05-23:55' },
+
+
+
+
+
+        { symbol: 'XBTUSD', name: 'Bitcoin', decimal: 2, type: 2, leverage: '500', tradingHours: '00:05-24:00' },
+        { symbol: 'XETUSD', name: 'Ethereum', decimal: 2, type: 2, leverage: '500', tradingHours: '00:05-24:00' },
+        { symbol: 'SOLUSD', name: 'Solana', decimal: 2, type: 2, leverage: '500', tradingHours: '00:05-24:00' },
+
+        { symbol: 'ADAUSD', name: 'Cardano', decimal: 4, type: 2, leverage: '500', tradingHours: '00:05-24:00' },
+        { symbol: 'DOTUSD', name: 'Polkadot', decimal: 3, type: 2, leverage: '500', tradingHours: '00:05-24:00' },
+        { symbol: 'DSHUSD', name: 'Dash', decimal: 2, type: 2, leverage: '500', tradingHours: '00:05-24:00' },
+        { symbol: 'TRXUSD', name: 'TRON', decimal: 4, type: 2, leverage: '500', tradingHours: '00:05-24:00' },
+        { symbol: 'XBNUSD', name: 'Bitcoin Cash', decimal: 2, type: 2, leverage: '500', tradingHours: '00:05-24:00' },
+        { symbol: 'XLCUSD', name: 'Litecoin', decimal: 2, type: 2, leverage: '500', tradingHours: '00:05-24:00' },
+
+
+
 
         { symbol: 'XBRUSD.c', name: 'XBRUSD', decimal: 3, type: 3, leverage: '200', tradingHours: '01:05-23:55' },
         { symbol: 'XNGUSD.c', name: 'XNGUSD', decimal: 4, type: 3, leverage: '200', tradingHours: '01:05-23:55' },
@@ -95,7 +113,7 @@ export const useWsConnectStore = defineStore('wsConnect', () => {
         
         // 期货
 
-        // type: 0外汇 1指数 3能源 4贵金属 5股票
+        //type: 0外汇 1指数 2加密货币cfds 3能源 4贵金属 5股票
     ])
 
 
@@ -123,17 +141,14 @@ export const useWsConnectStore = defineStore('wsConnect', () => {
         // 接收实时quote数据
         socket.value?.on('price.update', (arr: PriceUpdate[]) => {
             arr.forEach((item) => {
-                const quote = market.value[item.symbol]
-                if (!quote) return
+                market.value[item.symbol].bidPrice = item.bidPrice
+                market.value[item.symbol].askPrice = item.askPrice
+                market.value[item.symbol].last = item.last
+                market.value[item.symbol].symbolsize = item.symbolsize
+                market.value[item.symbol].decimals = item.decimals
+                market.value[item.symbol].up = market.value[item.symbol].bidPrice >= market.value[item.symbol].previousPrice? true : false
 
-                const previousPrice = quote.bidPrice
-                quote.bidPrice = item.bidPrice
-                quote.askPrice = item.askPrice
-                quote.last = item.last
-                quote.symbolsize = item.symbolsize
-                quote.decimals = item.decimals
-                quote.up = item.bidPrice >= previousPrice
-                quote.previousPrice = item.bidPrice
+                market.value[item.symbol].previousPrice = market.value[item.symbol].bidPrice
             })
         });
 
@@ -150,7 +165,7 @@ export const useWsConnectStore = defineStore('wsConnect', () => {
     }
 
     const subscribePrice = (type: number) => {
-        const list: string[] = []
+        let list: string[] = []
         coinList.value.forEach((item) => {
             if(item.type == type){
                 if(!roomList.value.includes(`price:${item.symbol}`))

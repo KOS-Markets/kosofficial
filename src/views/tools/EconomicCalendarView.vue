@@ -15,7 +15,7 @@
                 scrolling="no"
                 allowtransparency="true"
                 frameborder="0"
-                src="https://www.tradingview-widget.com/embed-widget/events/?locale=en#%7B%22colorTheme%22%3A%22light%22%2C%22isTransparent%22%3Afalse%2C%22countryFilter%22%3A%22ar%2Cau%2Cbr%2Cca%2Ccn%2Cfr%2Cde%2Cin%2Cid%2Cit%2Cjp%2Ckr%2Cmx%2Cru%2Csa%2Cza%2Ctr%2Cgb%2Cus%2Ceu%22%2C%22importanceFilter%22%3A%22-1%2C0%2C1%22%2C%22width%22%3A1080%2C%22height%22%3A800%2C%22utm_source%22%3A%22www.gvdmarkets.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22events%22%2C%22page-uri%22%3A%22www.gvdmarkets.com%2Feconomic-calendar%2F%22%7D"
+                src="https://www.tradingview-widget.com/embed-widget/events/?locale=en#%7B%22colorTheme%22%3A%22light%22%2C%22isTransparent%22%3Afalse%2C%22countryFilter%22%3A%22ar%2Cau%2Cbr%2Cca%2Ccn%2Cfr%2Cde%2Cin%2Cid%2Cit%2Cjp%2Ckr%2Cmx%2Cru%2Csa%2Cza%2Ctr%2Cgb%2Cus%2Ceu%22%2C%22importanceFilter%22%3A%22-1%2C0%2C1%22%2C%22width%22%3A1080%2C%22height%22%3A800%2C%22utm_source%22%3A%22www.kosmarkets.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22events%22%2C%22page-uri%22%3A%22www.kosmarkets.com%2Feconomic-calendar%2F%22%7D"
                 title="events TradingView widget"
                 lang="en"></iframe>
             <!-- <div class="btn">
@@ -29,6 +29,7 @@
 import { onBeforeMount, ref } from 'vue'
 
 import CustomCarousel from '@/components/custom/CustomCarousel.vue';
+import CustomButton from '@/components/custom/CustomButton.vue'
 
 import { browserRedirection } from '@/utils/tools'
 import { iframeCalendar } from '@/apis/index'

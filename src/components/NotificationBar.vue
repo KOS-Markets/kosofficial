@@ -20,7 +20,7 @@ import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
 watch(() => pageSettingsStore.lang, ()=>{
-    if(pageSettingsStore.lang == 'cn' || pageSettingsStore.lang == 'tw'){
+    if(pageSettingsStore.lang == 'cn'){
         store.showNotificationBar = false
     }
 })

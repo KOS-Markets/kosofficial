@@ -255,10 +255,7 @@ onUnmounted(() => {
             padding: 12px !important;
 
             &:hover .sub-list {
-                max-height: 520px;
-                opacity: 1;
-                visibility: visible;
-                transform: translateY(0);
+                height: 500px;
             }
 
             .icon {
@@ -278,37 +275,29 @@ onUnmounted(() => {
             }
 
             .sub-list {
-                width: max-content;
-                min-width: 210px;
-                max-height: 0;
+                width: 150px;
+                height: 0;
                 position: absolute;
                 top: 100%;
-                right: 0;
+                left: 0;
                 overflow: hidden;
                 color: #fff;
-                background-color: rgba(28, 30, 38, 0.94);
-                border: 1px solid rgba(255, 255, 255, 0.12);
-                border-radius: 6px;
-                box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
-                opacity: 0;
-                visibility: hidden;
-                transform: translateY(-6px);
-                transition: max-height .25s ease, opacity .2s ease, transform .2s ease, visibility .2s;
+                transition: .3s;
 
                 .text {
                     box-sizing: border-box;
-                    width: 100%;
-                    min-height: 44px;
-                    padding: 0 22px;
-                    align-items: center;
-                    background-color: transparent;
-                    white-space: nowrap;
+                    padding: 0 40px;
+                    background-color: #00000080;
+                    text-wrap: nowrap;
+                    word-wrap: normal;
 
                     &>div {
-                        line-height: 44px;
+                        line-height: 40px;
                     }
 
-                    &.choose, &:hover {
+                    &.active, &:hover {
+                        // font-weight: 500;
+                        // color: var(--text-100);
                         background-color: var(--button-bg-color-1);
                     }
                 }

@@ -26,7 +26,7 @@ import { motion } from 'motion-v'
 import type { CustomBoxType } from "@/types/index"
 import { upListHoverAnimateVariants } from "@/utils/motion.ts"
 
-import icon1 from '@/assets/img/home/advantages/icon-technology.png'
+import icon1 from '@/assets/img/home/advantages/icon-regulated.png'
 import icon2 from '@/assets/img/home/advantages/icon-spreads.png'
 import icon3 from '@/assets/img/home/advantages/icon-products.png'
 import icon4 from '@/assets/img/home/advantages/icon-support.png'

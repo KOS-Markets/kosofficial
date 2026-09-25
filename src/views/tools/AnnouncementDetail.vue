@@ -4,12 +4,10 @@
             :background="background"/>
 
         <div class="container" v-loading="loading">
-            <template v-if="announcement.type === 0">
-                <div class="article-title">{{ announcement.title }}</div>
-                <div class="article-content" v-html="announcement.content"></div>
-            </template>
+            <div class="article-title">{{ announcement.title }}</div>
+            <div class="article-content" v-html="announcement.content"></div>
 
-            <template v-else-if="announcement.type === 2 && tradingHoursContent">
+            <!-- <template v-else-if="announcement.type === 2 && tradingHoursContent">
                 <div class="article-title">{{ announcement.title }}</div>
                 <AnnouncementTradingHoursCard
                     :title="displayTitle"
@@ -23,11 +21,11 @@
                     :title="displayTitle"
                     :content="dividendContent"
                 />
-            </template>
+            </template> -->
 
-            <div class="btn" v-if="announcement.type === 0">
+            <!-- <div class="btn" v-if="announcement.type === 0">
                 <CustomButton :name="t('announcementDetailBtnText')" :type="0" @toPage="browserRedirection('/company/contact-us')" />
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
@@ -41,7 +39,7 @@ import AnnouncementDividendCard from '@/components/tools/AnnouncementDividendCar
 import AnnouncementTradingHoursCard from '@/components/tools/AnnouncementTradingHoursCard.vue';
 import CustomButton from '@/components/custom/CustomButton.vue';
 
-import background from '@/assets/img/tools/announcement/carousel-bg.png';
+import background from '@/assets/img/tools/announcement/bg.jpg';
 
 import { announcementUserDetail } from '@/apis/index'
 import { browserRedirection } from '@/utils/tools'
@@ -49,39 +47,36 @@ import {
     getAnnouncementDisplayTitle,
     parseStructuredAnnouncementContent,
 } from '@/utils/announcementContent'
-import type { AnnouncementItemType, DividendAdjustmentContent, TradingHoursContent } from '@/types/index'
+import type { NoticeItem, DividendAdjustmentContent, TradingHoursContent } from '@/types/index'
 
 import { useRoute } from 'vue-router';
 const route = useRoute();
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
-const announcement = ref<AnnouncementItemType>({
-    id: '',
+const announcement = ref<NoticeItem>({
+    id: 0,
     title: '',
     content: '',
-    lang: '',
-    created_at: '',
-    updated_at: '',
-    remark: '',
     weight: 0,
-    type: 0,
-    deleted: 0
+    create_time: 0,       // 毫秒时间戳
+    update_time: 0,       // 毫秒时间戳
+    language_name: '',    // 如 'zh', 'en'
 });
 const loading = ref<boolean>(false)
 
-const structuredContent = computed(() => parseStructuredAnnouncementContent(announcement.value))
-const tradingHoursContent = computed(() => (
-    structuredContent.value?.kind === 'tradingHours'
-        ? structuredContent.value as TradingHoursContent
-        : null
-))
-const dividendContent = computed(() => (
-    structuredContent.value?.kind === 'dividendAdjustment'
-        ? structuredContent.value as DividendAdjustmentContent
-        : null
-))
-const displayTitle = computed(() => getAnnouncementDisplayTitle(announcement.value, structuredContent.value))
+// const structuredContent = computed(() => parseStructuredAnnouncementContent(announcement.value))
+// const tradingHoursContent = computed(() => (
+//     structuredContent.value?.kind === 'tradingHours'
+//         ? structuredContent.value as TradingHoursContent
+//         : null
+// ))
+// const dividendContent = computed(() => (
+//     structuredContent.value?.kind === 'dividendAdjustment'
+//         ? structuredContent.value as DividendAdjustmentContent
+//         : null
+// ))
+// const displayTitle = computed(() => getAnnouncementDisplayTitle(announcement.value, structuredContent.value))
 
 const getData = async (id: string) => {
     if (!id) return

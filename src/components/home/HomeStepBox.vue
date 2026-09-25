@@ -41,6 +41,7 @@ import type { CustomBoxType } from "@/types/index"
 import { heightListAnimateVariants } from "@/utils/motion.ts"
 
 import plus from '@/assets/img/home/homestepbox/+.svg?raw'
+import mins from '@/assets/img/home/homestepbox/-.svg?raw'
 
 // import icon1 from '@/assets/img/home/homestepbox/mutli dimensional leaderboard.svg?raw'
 // import icon2 from '@/assets/img/home/homestepbox/one click sync.svg?raw'

@@ -110,7 +110,7 @@ export interface DividendAdjustmentContent {
 }
 
 // WebSocket / 行情
-// type: 0外汇 1指数 3能源 4贵金属 5股票
+// type: 0外汇 1指数 2加密货币cfds 3能源 4贵金属 5股票
 export interface CoinItem {
     symbol: string;
     name: string;
@@ -151,6 +151,16 @@ export interface AnnouncementItemType {
     weight: number;
     type: number;
     deleted: number;
+}
+
+export interface NoticeItem {
+    id: string | number
+    title: string
+    content: string
+    weight: number
+    create_time: number   // 毫秒时间戳
+    update_time: number   // 毫秒时间戳
+    language_name: string // 如 'zh', 'en'
 }
 
 export type WorldCup2026PrizeId = number | string

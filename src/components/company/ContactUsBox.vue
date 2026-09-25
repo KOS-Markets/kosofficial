@@ -19,6 +19,7 @@ import { motion } from 'motion-v'
 import type { CustomBoxType } from "@/types/index"
 import { hoverUpAnimateVariants } from "@/utils/motion.ts"
 
+import icon1 from '@/assets/img/company/contact-us/icon-1.jpg'
 import icon2 from '@/assets/img/company/contact-us/icon-2.jpg'
 import icon3 from '@/assets/img/company/contact-us/icon-3.jpg'
 
@@ -30,6 +31,11 @@ import { link_config } from "@/config"
 const dataList = ref<CustomBoxType>(
     {
         list: [
+            {
+                icon: icon1,
+                title: t('contactUsBoxSentence'),
+                intro: link_config.phone_number
+            },
             {
                 icon: icon2,
                 title: t('contactUsBoxSentence1')

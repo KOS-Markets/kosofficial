@@ -97,9 +97,7 @@ const router = createRouter({
         {
           path: '/tools/social-trading',
           name: 'toolsSocialTrading',
-          // Temporarily hidden at the user's request. Keep the legacy path safe by redirecting home.
-          redirect: '/home',
-          meta: { hidden: true },
+          component: () => import('@/views/tools/SocialTradingView.vue'),
         },
         {
           path: '/tools/education-academy',
@@ -190,7 +188,7 @@ const router = createRouter({
     //   component: () => import('../views/AboutView.vue'),
     // },
   ],
-  scrollBehavior() {
+  scrollBehavior(to, from, savedPosition) {
     // 如果有保存的位置（如浏览器后退），使用保存的位置
     // if (savedPosition) {
     //   return savedPosition

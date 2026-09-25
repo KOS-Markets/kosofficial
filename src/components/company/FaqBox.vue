@@ -10,8 +10,7 @@
                         <div v-html="item.show ? up : down"></div>
                     </div>
                 </div>
-                <motion.div class="collapse-content" :animate="item.show ? 'visible' : 'hidden'" initial="hidden"  :variants="heightListAnimateVariants">
-                    <div v-html="item.intro"></div>
+                <motion.div class="collapse-content" :animate="item.show ? 'visible' : 'hidden'" initial="hidden"  :variants="heightListAnimateVariants" v-html="item.intro">
                 </motion.div>
             </div>
         </div>

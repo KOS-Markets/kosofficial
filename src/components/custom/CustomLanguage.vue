@@ -66,21 +66,16 @@ const selectLang = async (lang: AppLang) => {
     }
 
     .lang-modal {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 6px;
+        display: flex;
+        flex-wrap: wrap;
         box-sizing: border-box;
 
         .select-item {
-            width: 100%;
-            min-height: 48px;
-            padding: 12px 16px;
+            width: 33.3%;
+            padding: 15px 20px;
             box-sizing: border-box;
             display: flex;
-            align-items: center;
             cursor: pointer;
-            border-radius: 6px;
-            white-space: nowrap;
 
 
             img {
@@ -92,8 +87,6 @@ const selectLang = async (lang: AppLang) => {
 
         .choose {
             color: var(--green-color);
-            background-color: color-mix(in srgb, var(--green-color) 10%, transparent);
         }
-
     }
 </style>

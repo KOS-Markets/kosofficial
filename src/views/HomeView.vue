@@ -62,6 +62,8 @@
 
     <HomeAdvantagesBox />
     <HomeAccountTypesBox />
+    <HomeStatsBox />
+    <HomeStepBox />
     <HomeGlobalStatsBox />
     <HomePlatformBox />
   </div>
@@ -72,6 +74,8 @@ import CustomButton from '@/components/custom/CustomButton.vue'
 import CustomTabList from '@/components/custom/CustomTabList.vue';
 import HomeAdvantagesBox from '@/components/home/HomeAdvantagesBox.vue';
 import HomeAccountTypesBox from '@/components/home/HomeAccountTypesBox.vue';
+import HomeStatsBox from '@/components/home/HomeStatsBox.vue';
+import HomeStepBox from '@/components/home/HomeStepBox.vue';
 import HomeGlobalStatsBox from '@/components/home/HomeGlobalStatsBox.vue';
 import HomePlatformBox from '@/components/home/HomePlatformBox.vue';
 
@@ -183,7 +187,6 @@ import { link_config } from '@/config';
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-        justify-content: space-between;
         margin-top: 32px;
 
         @media (max-width: 1100px) {
