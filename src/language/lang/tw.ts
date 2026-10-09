@@ -35,11 +35,17 @@ export default {
 
   language: `語言`,
 
-  footerContent: `<p><strong>免責聲明：</strong>衍生產品具有高槓桿特性，風險較高，未必適合所有投資者。本網站內容僅供說明及一般資訊參考，不構成財務建議，也未考慮您的投資目標、財務狀況或具體需要。KOS Markets Limited 提供的金融產品或服務可能產生佣金、利息、平台費用、股息、變動保證金以及其他費用和支出。本網站資訊不面向某些司法管轄區的居民，也不向在相關司法管轄區分發或使用本網站資訊會違反當地法律法規的任何個人或實體提供。本網站資訊不構成任何交易邀請，訪問本網站屬於訪客的主動行為。</p>
-    <p><strong>市場風險：</strong>金融市場交易可能帶來較高潛在回報，也可能帶來較高風險。在投資前，您必須了解並願意承擔相關風險。切勿使用無法承受損失的資金進行投資或交易。部分國家或地區不允許外匯交易，投資前請確認您所在國家或地區是否允許相關交易。</p>
-    <p><strong>服務限制：</strong>我們的服務不向以下司法管轄區居民提供：阿富汗、加拿大、古巴、伊拉克、伊朗、利比里亞、利比亞、緬甸、巴勒斯坦、丹麥、意大利、俄羅斯、斯洛文尼亞、瑞典、索馬里、敘利亞、蘇丹、也門、西班牙、歐盟、馬來西亞、印度尼西亞、越南、泰國和美國，以及列入適用 FATF 名單或受歐盟／聯合國制裁的司法管轄區。產品、功能及付款方式可能因地區而異。訪客應自行確認其所在地是否允許存取及使用相關服務。</p>
-    <p>網域 <strong>www.kosmarkets.com</strong> 由 KOS Markets Limited 營運。</p>
-    <p>KOS Markets Limited 在聖盧西亞註冊成立，註冊號為 2026-00467。註冊地址為：Ground Floor, The Sotheby Building, Rodney Bay, Gros-Islet, Saint Lucia。實際辦公地址為：477/34 Sutthiporn Soi, Prachasongkhro 2 Road, Din Daeng Subdistrict, Din Daeng District, Bangkok, Thailand。</p>`,
+  footerContent: `
+    <p><strong>市場風險：</strong>在金融市場中交易具有巨大的潛在回報，但也伴隨著巨大的潛在風險。您必須充分了解這些風險，并愿意承擔這些風險，才能在市場進行投資。請勿使用您無法承受損失的資金進行投資或交易。外匯交易在某些國家是不被允許的，在投資您的資金之前，請務必確認您的國家是否允許此類交易。</p>
+    <p><strong>免責聲明：</strong>衍生品具有高杠桿、高風險的特點，可能不適合所有投資者。本網站上的資料僅供說明用途和一般信息參考，不構成財務建議，也未考慮您的投資目標、財務狀況或特定需求。KOS Markets Limited 提供的金融產品或服務可能涉及傭金、利息、平臺費、股息、變動保證金及其他費用和收費。本網站上的信息不面向某些司法管轄區的居民，也不打算向任何司法管轄區內的任何個人或實體分發或供其使用，如果此類分發或使用可能違反該司法管轄區的任何當地法律或法規。訪問本網站的人是出于自己的主動意愿。本發布內容不構成任何交易邀請。</p>
+    <p>網站<strong>www.kosmarkets.com</strong>由KOS Markets Limited運營。</p>
+    <p>KOS Markets Limited 在圣盧西亞注冊成立，注冊號為 2026-00467。注冊地址為：Ground Floor, The Sotheby Building, Rodney Bay, Gros-Islet, Saint Lucia。實際辦公地址為：477/34 Sutthiporn Soi, Prachasongkhro 2 Road, Din Daeng Subdistrict, Din Daeng District, Bangkok, Thailand。</p>
+    <p>
+      <div>關聯實體：</div>
+      <div>KOS CAPITAL (AU) PTY LTD 由澳大利亞證券與投資委員會（ASIC） 許可和監管，牌照編號：001322591。</div>
+      <div>注冊地址：111 STURT ST ADELAIDE SA 5000 AUSTRALIA。</div>
+    </p>
+  `,
   copyright: '版權所有 ? 2026 KOSMARKETS 保留所有權利。',
 
   //Home
@@ -54,8 +60,8 @@ export default {
 
   homeboxSentence: `卓越交易環境`,
   homeboxSentence1: `攜手Kosmarkets，征戰全球投資市場`,
-  homeboxSentence2: `先進交易技術`,
-  homeboxSentence3: `透過直觀平台、專業工具和穩定的全球市場連接，把握交易機會`,
+  homeboxSentence2: `多重監管`,
+  homeboxSentence3: `Kosmarkets受全球多家權威監管機構監管`,
   homeboxSentence4: `超低點差`,
   homeboxSentence5: `提供低至0的緊密點差`,
   homeboxSentence6: `覆蓋250+種差價合約產品`,
@@ -499,7 +505,7 @@ export default {
 
   aboutBox1Sentence: `通往全球交易市場的可靠橋梁。`,
   aboutBox1Sentence1: `Kosmarkets是一家領先的投資服務提供商，致力于為交易者與投資者提供順暢、高效的交易體驗，涵蓋外匯、股票、大宗商品、指數等250+種差價合約產品。平臺由經驗豐富的金融專家與富有遠見的企業家團隊打造，旨在提供快速、安全且直觀的世界級交易環境。`,
-  aboutBox1Sentence2: `我們的技術整合直觀的交易平台、反應迅速的工具和多元市場產品，協助客戶在同一平台輕鬆管理交易體驗。`,
+  aboutBox1Sentence2: `KOS Capital (AU) Pty Ltd是一家在澳大利亞證券與投資委員會（ASIC）注冊的澳大利亞專有有限公司，澳大利亞公司編號（ACN）為700 868 766，并以AFS授權代表身份運營，代表編號為001322591。`,
   aboutBox1Sentence3: `點擊此處預覽<strong>公司簡介</strong>`,
 
   aboutBox2Sentence: `我們的愿景`,
@@ -508,8 +514,8 @@ export default {
   aboutBox2Sentence3: `我們堅信金融機遇應當觸手可及。我們的使命是通過提供前沿交易工具、專業市場洞察與專屬支持，賦能客戶以更智慧、更高效、更自信的方式參與交易。`,
   aboutBox2Sentence4: `我們的核心價值`,
   aboutBox2Sentence5: `創新：我們不斷突破邊界，提供極速執行、直觀界面與順暢的交易解決方案，全面提升您的交易體驗。`,
-  aboutBox2Sentence6: `安全：我們採用實用的防護措施和負責任的資料處理方式，為帳戶資訊提供支援與保護。`,
-  aboutBox2Sentence7: `透明：我們清楚說明服務、費用和交易條件，並在每項決策中重視客戶需求。`,
+  aboutBox2Sentence6: `安全：您的資金與信息安全始終是我們的首要任務。我們遵循全球最高標準的數據保護與金融合規要求，確保您的資產與隱私始終受到保障。`,
+  aboutBox2Sentence7: `透明：我們以高度透明與誠信運營，嚴格遵守監管要求，始終將客戶利益置于首位。`,
 
   //why
   whyViewTitle: `為什么選擇Kosmarkets`,
@@ -523,7 +529,7 @@ export default {
   whyBox1Sentence: `高杠桿`,
   whyBox1Sentence1: `低點差`,
   whyBox1Sentence2: `多元化交易產品`,
-  whyBox1Sentence3: `技術實力`,
+  whyBox1Sentence3: `嚴格監管`,
   whyBox1Sentence4: `深度流動性`,
 
   whyBox2Sentence: `在Kosmarkets交易，您可享受卓越的訂單執行體驗。`,
@@ -539,20 +545,20 @@ export default {
   whyBox3Sentence5: `不斷增長的活躍交易賬戶數量，體現了全球交易者對我們平臺的信任與認可。`,
   whyBox3Sentence6: `7×24 小時多語言支持`,
   whyBox3Sentence7: `我們的專業客服團隊全天候在線，提供多語言專家級支持，全程為您的交易保駕護航。`,
-  whyBox3Sentence8: `為更佳交易體驗而設計`,
-  whyBox3Sentence9: `從靈活的帳戶選項到直觀的平台和實用的市場工具，我們致力讓交易旅程的每個環節都清晰、高效且易於管理。`,
+  whyBox3Sentence8: `持牌合規 · 安全保障`,
+  whyBox3Sentence9: `KOS Capital (AU) Pty Ltd是一家在澳大利亞證券與投資委員會（ASIC）注冊的澳大利亞專有有限公司，澳大利亞公司編號（ACN）為700 868 766，并以AFS授權代表身份運營，代表編號為001322591。`,
   whyBox3Sentence10: `我們的承諾`,
-  whyBox3Sentence11: `我們致力成為您探索金融市場時的實用夥伴。透過現代化交易基礎設施、清晰的營運方式和以客戶為中心的服務，我們為不同經驗水平的交易者提供作出理性決策所需的工具與支援。`,
+  whyBox3Sentence11: `我們不僅是一家經紀商，更是您在金融市場中的長期戰略伙伴。通過領先的交易基礎設施、透明安全的運營體系以及以客戶為核心的服務理念，我們確保每一位交易者，無論經驗水平如何，都能享受更智能、更安全、更具價值的交易體驗。`,
 
   //legal documents
   legalDocumentsViewTitle: `法律文件`,
-  legalDocumentsViewSubTitle: `協議、政策及重要帳戶資訊`,
+  legalDocumentsViewSubTitle: `協議、政策及監管信息`,
 
   legalDocumentsBoxSentence: `Kosmarkets是全球領先的高質量外匯交易經紀商之一，致力于為全球機構及零售客戶提供優質的在線外匯及大宗商品交易服務。作為一家長期穩健經營的金融服務公司，Kosmarkets多銀行報價終端可為您提供具競爭力的報價及高質量的交易執行速度。同時，我們亦提供更靈活的杠桿選擇。在您于Kosmarkets開立真實交易賬戶前，請務必仔細閱讀并充分理解以下法律聲明文件。`,
   legalDocumentsBoxSentence1: `對沖政策`,
   legalDocumentsBoxSentence2: `特此提醒您，在包括外匯市場、場外外匯期權及差價合約（CFD）等部分市場中，我們可能以“做市商（Market Maker）”身份參與交易，即為促進相關金融工具的交易，我們可能持有一定數量的受支持金融工具，并通過在線交易平臺提供“買價”和“賣價”報價，或從自有庫存中執行訂單，或尋求對沖訂單。您理解并接受，在我們作為做市商的市場中，我們可能持有與您或其他客戶相反的交易頭寸，從而可能產生潛在的利益沖突。由此產生的傭金、隔夜利息、點差中包含的相關成本及其他費用，均可能影響您的交易結果，并可能對您的交易表現產生不利影響。`,
-  legalDocumentsBoxSentence3: `帳戶資金操作`,
-  legalDocumentsBoxSentence4: `您可以透過客戶入口網站提供的付款方式提交入金和出金申請。處理時間、費用及可用性可能因付款方式及地區而異。提交前請仔細核對資料，並確保付款帳戶姓名與您的Kosmarkets帳戶一致。如需協助，請聯絡客服。`,
+  legalDocumentsBoxSentence3: `客戶資金存管`,
+  legalDocumentsBoxSentence4: `所有客戶資金均獨立、安全地存放于客戶隔離賬戶中，與公司運營資金完全分離。Kosmarkets嚴格執行客戶資金隔離制度，并全面遵守相關監管要求。所有客戶資金均接受每日銀行審計與清算。請注意，客戶存放的資金僅可用于履行交易保證金義務，不會用于支付公司經營相關支出，例如租金、水電費或員工薪資。`,
   legalDocumentsBoxSentence5: `追加保證金通知`,
   legalDocumentsBoxSentence6: `Kosmarkets自動運行“追加保證金”機制，以協助客戶降低賬戶出現負余額的風險。為持續持倉或正常交易，您的賬戶凈值須維持在當前持倉保證金的50%以上。當凈值低于該標準時，系統將優先平倉對您最不利的倉位。在強制平倉前，當賬戶凈值下降至所需保證金的70%時，交易平臺將發出風險預警提示。在市場劇烈波動期間，尤其是在重要數據公布（如非農就業數據、美聯儲利率決議等）時，可能產生額外風險。周末持倉亦可能因跳空行情觸發追加保證金機制。`,
   legalDocumentsBoxSentence7: `投訴處理`,
@@ -582,8 +588,8 @@ export default {
   faqBoxSentence4: `請登錄客戶后臺（CRM）提交杠桿變更申請。在提交申請前，請確保賬戶內所有持倉已全部平倉并結算。Kosmarkets在收到您的申請后，將于1–2個工作日內完成內部處理。申請獲批后，您將通過電子郵件收到通知。外匯交易的高杠桿與低保證金特性，可能因價格劇烈波動而導致重大損失。客戶須始終滿足持倉所需的最低保證金要求，并有責任不時監控賬戶余額及可用保證金。一旦維持持倉所需的最低保證金不足，Kosmarkets有權對客戶賬戶中的任何或全部持倉進行強制平倉。`,
   faqBoxSentence5: `3. 什么是第三方？`,
   faqBoxSentence6: `當向Kosmarkets交易賬戶進行入金或出金操作時，若資金轉入或轉出的銀行賬戶名稱與Kosmarkets交易賬戶名稱不一致，則將被視為第三方入金或第三方出金。此類情況包括但不限于：銀行賬戶名稱與Kosmarkets交易賬戶名稱不一致、使用公司銀行賬戶為Kosmarkets個人交易賬戶入金、匯款支票背書人名稱與Kosmarkets交易賬戶名稱不一致等。為遵守國際反洗錢公約，Kosmarkets在任何情況下均不接受第三方入金或第三方出金。`,
-  faqBoxSentence7: `4. 如何提升帳戶安全性？`,
-  faqBoxSentence8: `請使用獨立密碼，啟用所有可用的安全功能，並切勿向任何人透露登入資料或驗證碼。定期檢查帳戶活動，並在提交申請前核對入金和出金資料。如發現陌生活動或收到可疑訊息，請立即透過官方網站聯絡Kosmarkets客服。`,
+  faqBoxSentence7: `4. Kosmarkets如何保障客戶資金安全？`,
+  faqBoxSentence8: `Kosmarkets嚴格執行客戶資金隔離制度，所有客戶資金均實行獨立管理，并存放于獨立的客戶資金銀行賬戶中。Kosmarkets資產充足，管理能力穩健，嚴格遵守監管要求，并已購買專業責任保險（PI 保險），覆蓋公司及客戶資金。即使公司出現財務問題，客戶資金亦可獲得全額賠付，確保存放于Kosmarkets的客戶資金絕對安全。Kosmarkets致力于提供高度透明的服務，每日向客戶發送交易報告，并提供實時入金及出金交易執行確認。`,
   faqBoxSentence9: `5. 出金是否會產生相關費用？`,
   faqBoxSentence10: `根據反洗錢政策，未進行任何交易的賬戶在出金時需額外收取 2.5% 的手續費，且接收出金的銀行賬戶持有人姓名必須與Kosmarkets交易賬戶持有人姓名一致。`,
   faqBoxSentence11: `6. 匯入的資金何時到賬我的交易賬戶？`,

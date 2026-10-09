@@ -35,11 +35,17 @@ export default {
 
   language: `Language`,
 
-  footerContent: `<p><strong>Disclaimer:</strong> Derivative products are highly leveraged, carry a high level of risk and may not be appropriate for all investors. The material on this website is intended for illustrative purposes and general information only. It does not constitute financial advice and does not take into account your investment objectives, financial situation or particular needs. Commissions, interest, platform fees, dividends, variation margin, and other fees and charges may apply to financial products or services available from KOS Markets Limited. The information on this website is not intended for residents of certain jurisdictions and is not intended for distribution to, or use by, any person or entity in any jurisdiction where such distribution or use may be contrary to local laws or regulations. Those who access this website do so on their own initiative. This website does not constitute an invitation to trade.</p>
-    <p><strong>Market Risk:</strong> Trading in the financial markets offers the potential for substantial rewards but also carries substantial risk. You must understand the risks and be willing to accept them before investing. Do not invest or trade with money you cannot afford to lose. Forex trading is not permitted in some countries. Before investing, check whether trading is permitted in your country.</p>
-    <p><strong>Service Restrictions:</strong> Our services are not available to residents of certain jurisdictions, including Afghanistan, Canada, Cuba, Iraq, Iran, Liberia, Libya, Myanmar, Palestine, Denmark, Italy, Russia, Slovenia, Sweden, Somalia, Syria, Sudan, Yemen, and the United States, as well as jurisdictions appearing on applicable FATF lists or subject to EU or UN sanctions. Products, features, and payment methods may vary by location. Visitors are responsible for confirming that access to and use of the relevant services are permitted in their location.</p>
+  footerContent: `
+    <p><strong>Market Risk:</strong> Trading in the financial markets has large potential rewards, but also large potential risk. You must be aware of the risks and be willing to accept them in order to invest in the markets. Don't invest and trade with money which you can't afford to lose. Forex Trading are not allowed in some countries, before investing your money, make sure whether your country is allowing this or not.</p>
+    <p><strong>Disclaimer:</strong> Derivative products are highly leveraged, carry a high level of risk and may not be appropriate for all investors. The material on this website is intended for illustrative purposes and general information only. It does not constitute financial advice nor does it take into account your investment objectives, financial situation or particular needs. Commission, interest, platform fees, dividends, variation margin and other fees and charges may apply to financial products or services available from KOS Markets Limited. The information on this website is not intended for residents of certain jurisdictions and are not intended for distribution to, or use by, any person or entity in any jurisdiction where such distribution or use may be contrary to any local laws or regulations of that jurisdiction. Those who access this website do so on their own initiative. The release does not constitute any invitation to trade.</p>
     <p>The domain <strong>www.kosmarkets.com</strong> is operated by KOS Markets Limited.</p>
-    <p>KOS Markets Limited is incorporated in St Lucia with registration number 2026-00467. The registered address is Ground Floor, The Sotheby Building, Rodney Bay, Gros-Islet, Saint Lucia. The physical address is 477/34 Sutthiporn Soi, Prachasongkhro 2 Road, Din Daeng Subdistrict, Din Daeng District, Bangkok, Thailand.</p>`,
+    <p>KOS Markets Limited is incorporated in St Lucia with registration number 2026-00467. The registered address is Ground Floor, The Sotheby Building, Rodney Bay, Gros-Islet, Saint Lucia. The physical address is 477/34 Sutthiporn Soi, Prachasongkhro 2 Road, Din Daeng Subdistrict, Din Daeng District, Bangkok, Thailand.</p>
+    <p>
+      <div>Affiliated Entities:</div>
+      <div>KOS CAPITAL (AU) PTY LTD is an Australian Proprietary Company.</div>
+      <div>Authorized by the Australian Securities & Investments Commission (ASIC) under license number 001322591, and registered address at 111 STURT ST ADELAIDE SA 5000 AUSTRALIA.</div>
+    </p>
+  `,
   copyright: 'Copyright © 2026 KOSMARKETS. All Rights Reserved.',
 
   //Home
@@ -54,8 +60,8 @@ export default {
 
   homeboxSentence: `Top-Notch Trading Environment`,
   homeboxSentence1: `Conquer Global Investment Transactions With Kosmarkets`,
-  homeboxSentence2: `Advanced Trading Technology`,
-  homeboxSentence3: `Trade with intuitive platforms, professional tools, and reliable access to global markets`,
+  homeboxSentence2: `Multi-regulated`,
+  homeboxSentence3: `Kosmarkets is regulated by multiple regulatory authorities across the globe`,
   homeboxSentence4: `Ultra-Low Spreads`,
   homeboxSentence5: `We offer minimized transactions costs with tight spreads as low as 0.0 pips`,
   homeboxSentence6: `250+ Trading Products`,
@@ -499,7 +505,7 @@ export default {
 
   aboutBox1Sentence: `Your Trusted Gateway to Global Trading.`,
   aboutBox1Sentence1: `Kosmarkets is a premier investment services provider, empowering traders and investors with seamless access to 250+ CFD instruments across forex, stocks, commodities, indices, and more. Built by a team of seasoned financial experts and visionary entrepreneurs, our platform is designed to deliver a world-class trading experience that’s fast, secure, and intuitive.`,
-  aboutBox1Sentence2: `Our technology brings together intuitive platforms, responsive tools, and access to a broad range of markets, helping clients manage their trading experience from one place.`,
+  aboutBox1Sentence2: `KOS Capital (AU) Pty Ltd is an Australian proprietary company registered with the Australian Securities & Investments Commission (ASIC) under ACN 700 868 766 and operates as an AFS authorised representative under Representative Number 001322591.`,
   aboutBox1Sentence3: `Click here to preview <strong>company profile</strong>`,
 
   aboutBox2Sentence: `Our Vision`,
@@ -508,8 +514,8 @@ export default {
   aboutBox2Sentence3: `We believe financial opportunity should be universal. Our mission is to democratize trading by equipping clients with cutting edge tools, expert insights and dedicated support that empower them to trade smarter, faster and with greater confidence.`,
   aboutBox2Sentence4: `Our Core Values`,
   aboutBox2Sentence5: `Innovation: We continuously push boundaries to deliver lightning fast execution, intuitive interfaces and friction less trading solutions that elevate your experience.`,
-  aboutBox2Sentence6: `Security: We use practical safeguards and responsible data-handling practices to support the protection of account information.`,
-  aboutBox2Sentence7: `Transparency: We communicate clearly about our services, costs, and trading conditions while putting client needs at the center of every decision.`,
+  aboutBox2Sentence6: `Security: Your safety is our top priority. We adhere to the highest global standards for data protection and financial integrity, ensuring your assets and information are always secure.`,
+  aboutBox2Sentence7: `Transparency: We operate with full transparency and integrity, upholding strict regulatory compliance and putting your interests first.`,
 
   //why
   whyViewTitle: `Why Kosmarkets`,
@@ -523,7 +529,7 @@ export default {
   whyBox1Sentence: `High leverage`,
   whyBox1Sentence1: `Low spreads`,
   whyBox1Sentence2: `Diversified instruments`,
-  whyBox1Sentence3: `Technology`,
+  whyBox1Sentence3: `Supervision`,
   whyBox1Sentence4: `Liquidity`,
 
   whyBox2Sentence: `Trading in Kosmarkets, you can enjoy the best order execution.`,
@@ -539,20 +545,20 @@ export default {
   whyBox3Sentence5: `Our growing community of active trading accounts reflects the trust and confidence placed in our platform by traders worldwide.`,
   whyBox3Sentence6: `24/7 Multilingual Support`,
   whyBox3Sentence7: `Our professional customer service team is available around the clock, offering expert assistance in multiple languages to ensure you’re supported every step of the way.`,
-  whyBox3Sentence8: `Built for a Better Trading Experience`,
-  whyBox3Sentence9: `From flexible account options to intuitive platforms and practical market tools, we focus on making every stage of the trading journey clear, efficient, and easy to manage.`,
+  whyBox3Sentence8: `Licensed and Regulated for Your Protection`,
+  whyBox3Sentence9: `KOS Capital (AU) Pty Ltd is an Australian proprietary company registered with the Australian Securities & Investments Commission (ASIC) under ACN 700 868 766 and operates as an AFS authorised representative under Representative Number 001322591.`,
   whyBox3Sentence10: `Our Commitment`,
-  whyBox3Sentence11: `We aim to be a practical partner as you navigate financial markets. Our focus on modern trading infrastructure, clear operations, and a client-centered approach gives traders of every experience level the tools and support to make informed decisions.`,
+  whyBox3Sentence11: `We are more than just a broker. We are your strategic partner in navigating the financial markets with confidence. Our commitment to cutting-edge trading infrastructure, transparent and secure operations, and a client-first approach ensures that every trader, regardless of experience level, can access a smarter, safer and more rewarding way to trade.`,
 
   //legal documents
   legalDocumentsViewTitle: `Legal Documents`,
-  legalDocumentsViewSubTitle: `Agreements, policies, and important account information`,
+  legalDocumentsViewSubTitle: `Agreements, policies, and regulatory information`,
 
   legalDocumentsBoxSentence: `Kosmarkets is one of the leading high-quality foreign exchange trading brokers, committed to providing high-quality online foreign exchange trading and commodity trading services to global institutional and retail clients. As a long-term reputable financial company, Kosmarkets multi bank quotation terminal will provide you with highly advantageous quotations and high-quality trading execution speed. At the same time, we will also provide you with more flexible leverage options. Please ensure that you have fully read and are aware of the following legal declaration documents before opening a live trading account on Kosmarkets.`,
   legalDocumentsBoxSentence1: `Hedging Policy`,
   legalDocumentsBoxSentence2: `You are specifically made aware that in certain markets, including the foreign exchange markets, OTC foreign exchange options and CFD Contracts, we may act as a ‘Market Maker’, i.e., we may take the risk of holding a certain number of Supported Financial Instruments in order to facilitate trading in these Financial Instruments by displaying/quoting ‘bid’ and ‘ask’ prices (‘sell’ and ‘buy’ quotations) for such Supported Financial Instruments on our Online Trading Facility and filling Orders received in respect to such Supported Financial Instruments from our own inventory or seeking an Offsetting Order. You accept that, in such Markets where we act as Market Maker, we may hold positions that are contrary to your positions and/or the positions of certain other of our clients, resulting in potential conflicts of benefit between us, and any such other of our clients. Any commission costs, swap charges, costs associated to and included in the ‘spreads’ that are part of the Price Quotes provided by us as a Market Maker in certain Markets, and any other fees and charges will consequently influence you trading result(s) and may have a negative effect on your trading performance compared to a situation in which such commission costs, interest charges, costs associated to and included in the ‘spreads’, would not apply.`,
-  legalDocumentsBoxSentence3: `Account Funding`,
-  legalDocumentsBoxSentence4: `Deposits and withdrawals can be requested through the payment methods available in your client portal. Processing times, fees, and availability may vary by method and location. Before submitting a request, review the details carefully and make sure the payment account name matches your Kosmarkets account. Contact support if you need assistance.`,
+  legalDocumentsBoxSentence3: `Client Fund Deposit`,
+  legalDocumentsBoxSentence4: `All funds of the client will be independently and securely stored in our segregated account, which is completely separate from our company’s operating funds. Kosmarkets strictly implements the customer fund separation system and fully complies with relevant regulatory regulations. All customer funds will undergo daily bank audits and settlements. Please note that the customer’s storaged funds may be used to fulfill the obligation of the contracting party to submit sufficient margin for transactions, but will not be used for expenses related to commercial operations, such as rent, utilities, or employee salaries.`,
   legalDocumentsBoxSentence5: `Margin Call`,
   legalDocumentsBoxSentence6: `Kosmarkets automatically operates the “margin call” mechanism to help customers reduce the risk of account funds becoming negative. In order to continue to hold positions or trade normally, your equity must remain above 50% of the existing position margin. Once the net value falls below this standard, the positions that are most unfavorable to you will be closed first. Before your position is forcibly closed, when the equity is reduced to 70% of the required margin, it will be displayed on your trading platform prompting you that your account has reached the red warning level. When the market is volatile, especially when some major data (such as non-farm payrolls data and the Federal Reserve’s interest rate decision, etc.) are released, additional losses may occur. In this case, the automated margin call mechanism plays a role in protecting both customers and traffic providers. character of. Holding positions on weekends increases the risk of a price gap, where equity may fall below 50% of the required margin, triggering a margin call mechanism.`,
   legalDocumentsBoxSentence7: `Complaint Handling`,
@@ -582,8 +588,8 @@ export default {
   faqBoxSentence4: `Please log in to the portal (CRM) to submit a leverage change application. Before submitting the application, please make sure that all positions in your account have been closed and settled. After receiving your application, Kosmarkets will respond within 1-2 working days Internally processed. You will be notified by email once your application has been approved. The high leverage and low margin of foreign exchange trading may result in significant losses due to drastic changes in the price of foreign exchange trading contracts. Customers must always meet the minimum margin requirements for open positions, and it is the responsibility of each customer to monitor account balances and available margin balances from time to time. Once the minimum margin required to maintain an open position is insufficient, Kosmarkets has the right to liquidate any or all positions in the customer’s account.`,
   faqBoxSentence5: `3. What is A Third Party?`,
   faqBoxSentence6: `When remittance or withdrawal is made to the Kosmarkets trading account, if the name of the bank account to which the funds are transferred out or transferred is inconsistent with the account name of Kosmarkets, it will be regarded as a third-party remittance or third-party withdrawal. Such circumstances include (but are not limited to) the name of the bank account is inconsistent with the name of the Kosmarkets trading account, the use of a company bank account to fund the Kosmarkets personal trading account, the name of the check endorser for remittance is inconsistent with the name of the Kosmarkets trading account wait. In order to comply with international anti-money laundering conventions, Kosmarkets does not accept third-party remittances or third-party withdrawals under any circumstances.`,
-  faqBoxSentence7: `4. How Can I Help Keep My Account Secure?`,
-  faqBoxSentence8: `Use a unique password, enable all available security features, and never share your login credentials or verification codes. Review account activity regularly and confirm deposit and withdrawal details before submitting a request. If you notice unfamiliar activity or receive a suspicious message, contact Kosmarkets support through the official website immediately.`,
+  faqBoxSentence7: `4. How Do Kosmarkets Ensure The Safety Of Customers’ Funds?`,
+  faqBoxSentence8: `Kosmarkets strictly enforces the customer fund isolation system, and all customer funds will be managed separately and stored in separate customer fund bank accounts. Kosmarkets has ample assets and good management capabilities. Kosmarkets strictly abides by regulatory requirements and has purchased professional liability insurance (PI insurance), which covers the company and customer funds. Even when the company has financial problems, customers can also get Full compensation to ensure the absolute safety of customers’ funds deposited in Kosmarkets. Kosmarkets is committed to providing comprehensive transparency, sending transaction reports to customers every day, real-time deposit and withdrawal transaction execution confirmation.`,
   faqBoxSentence9: `5. Are There Any Fees Related To Withdrawals?`,
   faqBoxSentence10: `According to the Anti-Money Laundering policy, withdrawals from accounts without any trading require an additional 2.5% handling fee, and the name of the bank account holder who receives the withdrawal must be the same as the name of the Kosmarkets trading account holder.`,
   faqBoxSentence11: `6. When Will My Remitted Funds Arrive In My Trading Account?`,
