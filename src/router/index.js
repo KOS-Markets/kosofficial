@@ -61,8 +61,7 @@ var router = (0, vue_router_1.createRouter)({
                 {
                     path: '/markets/crypto',
                     name: 'marketsCrypto',
-                    redirect: '/markets/forex',
-                    meta: { hidden: true },
+                    component: function () { return Promise.resolve().then(function () { return require('@/views/markets/CryptoView.vue'); }); },
                 },
                 {
                     path: '/tools/market-news',

@@ -10,6 +10,8 @@ export default {
   stocks: `股票`,
   energy: `能源`,
   metals: `贵金属`,
+  crypto: `加密货币`,
+
 
   tools: `交易工具`,
   marketNews: `市场资讯`,
@@ -51,6 +53,8 @@ export default {
   //Home
   trade: `交易`,
   futures: `期货`,
+  cryptoCFDs: `加密货币CFDs`,
+
   shares: `股票`,
 
   carouselTitle: `新一代`,
@@ -387,6 +391,26 @@ export default {
   metalsTextBox9: `现货黄金与现货白银在国际市场中以“美元/盎司”形式报价，表示每盎司黄金或白银所对应的美元价格。现货黄金的最小报价变动单位为0.01，现货白银为0.001。以黄金报价1930.12/1930.57为例，1930.12为卖出价（Bid），1930.57为买入价（Ask），投资者可按相应价格进行交易，此时所需支付的点差为二者差值，即0.45。再以黄金价格每盎司2,000美元为例，在1:100杠杆条件下，交易1盎司现货黄金仅需20美元保证金。Kosmarkets提供最高可达1:2000的杠杆比例。请注意，保证金交易在提升资金使用效率的同时，亦存在放大风险的可能。`,
   metalsTextBox10: `盈亏计算`,
   metalsTextBox11: `合约价值 = 当前黄金（或白银）价格×交易手数。以黄金报价1931.12/1930.57为例，若您以1930.57的价格买入1手黄金（1手 = 100盎司），并在价格上涨至1960.98时卖出，则盈利为（1960.98 – 1930.57×100盎司 = 3,041美元。相反，若价格跌破1930.57，则将产生相应亏损。`,
+  //crypto
+  cryptoViewTitle: `加密货币差价合约交易`,
+  cryptoViewIntro: `我们的平台为您提供多种加密货币交易机会，享受超低点差与极速成交体验。`,
+  cryptoViewSubTitle: `全天候交易主流数字资产`,
+
+  cryptoText1Box: `7×24小时市场`,
+  cryptoText1Box1: `随时交易比特币、以太坊等加密资产`,
+  cryptoText1Box2: `高级交易工具`,
+  cryptoText1Box3: `支持杠杆、止损与投资组合管理`,
+  cryptoText1Box4: `实时市场洞察`,
+  cryptoText1Box5: `实时图表、新闻与专家分析`,
+
+  cryptoBoxSentence: `为何选择Kosmarkets交易加密货币？`,
+  cryptoBoxSentence1: `Kosmarkets提供具竞争力的加密货币交易环境与成本优势。`,
+  cryptoBoxSentence2: `加密货币`,
+  cryptoBoxSentence3: `加密货币是一种去中心化的数字资产，其价格由市场需求与新闻驱动。`,
+  cryptoBoxSentence4: `交易`,
+  cryptoBoxSentence5: `在Kosmarkets，客户可使用美元交易加密货币 CFD，并灵活选择做多或做空。`,
+
+
   //tools
 
   //news

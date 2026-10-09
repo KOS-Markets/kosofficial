@@ -106,6 +106,7 @@ const activeTab = ref<number>(props.active)
 const tabs = computed(() => [
     { label: t('forex'), type: 0 },
     { label: t('indices'), type: 1 },
+    { label: t('cryptoCFDs'), type: 2 },
     { label: t('energy'), type: 3 },
     { label: t('metals'), type: 4 },
     { label: t('shares'), type: 5 },

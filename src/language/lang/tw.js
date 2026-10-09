@@ -11,6 +11,8 @@ exports.default = {
     stocks: "\u80A1\u7968",
     energy: "\u80FD\u6E90",
     metals: "\u8CB4\u91D1\u5C6C",
+    crypto: "加密貨幣",
+
     tools: "\u4EA4\u6613\u5DE5\u5177",
     marketNews: "\u5E02\u5834\u8CC7\u8A0A",
     economicCalendar: "\u8CA1\u7D93\u65E5\u6B77",
@@ -35,6 +37,8 @@ exports.default = {
     //Home
     trade: "\u4EA4\u6613",
     futures: "\u671F\u8CA8",
+    cryptoCFDs: "加密貨幣CFDs",
+
     shares: "\u80A1\u7968",
     carouselTitle: "\u65B0\u4E00\u4EE3",
     carouselTitleAccent: "\u4EA4\u6613\u9AD4\u9A57",
@@ -316,6 +320,22 @@ exports.default = {
     metalsTextBox11: "\u5408\u7D04\u50F9\u503C = \u7576\u524D\u9EC3\u91D1\uFF08\u6216\u767D\u9280\uFF09\u50F9\u683C\u00D7\u4EA4\u6613\u624B\u6578\u3002\u4EE5\u9EC3\u91D1\u5831\u50F91931.12/1930.57\u70BA\u4F8B\uFF0C\u82E5\u60A8\u4EE51930.57\u7684\u50F9\u683C\u8CB7\u51651\u624B\u9EC3\u91D1\uFF081\u624B = 100\u76CE\u53F8\uFF09\uFF0C\u5E76\u5728\u50F9\u683C\u4E0A\u6F32\u81F31960.98\u6642\u8CE3\u51FA\uFF0C\u5247\u76C8\u5229\u70BA\uFF081960.98 \u2013 1930.57\u00D7100\u76CE\u53F8 = 3,041\u7F8E\u5143\u3002\u76F8\u53CD\uFF0C\u82E5\u50F9\u683C\u8DCC\u78341930.57\uFF0C\u5247\u5C07\u7522\u751F\u76F8\u61C9\u8667\u640D\u3002",
     //tools
     //news
+    cryptoViewTitle: "加密貨幣差價合約交易",
+    cryptoViewIntro: "我們的平臺為您提供多種加密貨幣交易機會，享受超低點差與極速成交體驗。",
+    cryptoViewSubTitle: "全天候交易主流數字資產",
+    cryptoText1Box: "7×24小時市場",
+    cryptoText1Box1: "隨時交易比特幣、以太坊等加密資產",
+    cryptoText1Box2: "高級交易工具",
+    cryptoText1Box3: "支持杠桿、止損與投資組合管理",
+    cryptoText1Box4: "實時市場洞察",
+    cryptoText1Box5: "實時圖表、新聞與專家分析",
+    cryptoBoxSentence: "為何選擇Kosmarkets交易加密貨幣？",
+    cryptoBoxSentence1: "Kosmarkets提供具競爭力的加密貨幣交易環境與成本優勢。",
+    cryptoBoxSentence2: "加密貨幣",
+    cryptoBoxSentence3: "加密貨幣是一種去中心化的數字資產，其價格由市場需求與新聞驅動。",
+    cryptoBoxSentence4: "交易",
+    cryptoBoxSentence5: "在Kosmarkets，客戶可使用美元交易加密貨幣 CFD，并靈活選擇做多或做空。",
+
     marketNewsViewTitle: "\u5E02\u5834\u8CC7\u8A0A \u00B7 \u5916\u90E8\u63A5\u5165",
     marketNewsViewIntro: "\u6211\u5011\u70BA\u60A8\u63D0\u4F9B\u5168\u5929\u5019\uFF0824/7\uFF09\u7684\u5BE6\u6642\u5E02\u5834\u52D5\u614B\uFF0C\u8986\u84CB\u5168\u7403\u8D85\u904E100\u500B\u570B\u5BB6\u7684\u6700\u65B0\u8CC7\u8A0A\uFF0C\u52A9\u60A8\u53CA\u6642\u638C\u63E1\u5404\u985E\u91D1\u878D\u5E02\u5834\u7684\u91CD\u8981\u4FE1\u606F\u3002",
     marketNewsViewSubTitle: "\u5BE6\u6642\u8981\u805E\uFF0C\u6D1E\u5BDF\u5E02\u5834\u52D5\u5411",

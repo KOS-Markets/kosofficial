@@ -21,6 +21,10 @@
               <span>{{ t('indices') }}</span>
             </div>
             <div class="trust-item">
+              <img src="@/assets/img/home/icon-crypto.png" alt="">
+              <span>{{ t('cryptoCFDs') }}</span>
+            </div>
+            <div class="trust-item">
               <img src="@/assets/img/home/icon-energy.png" alt="">
               <span>{{ t('energy') }}</span>
             </div>

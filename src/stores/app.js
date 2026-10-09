@@ -90,6 +90,12 @@ exports.useAppStore = (0, pinia_1.defineStore)('app', function () {
                     icon: "Histogram",
                 },
                 {
+                    name: "crypto",
+                    subTitle: "cryptoViewSubTitle",
+                    path: "marketsCrypto",
+                    icon: "Money",
+                },
+                {
                     name: "stocks",
                     subTitle: "stocksViewSubTitle",
                     path: "marketsStocks",

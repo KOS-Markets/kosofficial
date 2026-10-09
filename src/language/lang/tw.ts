@@ -10,6 +10,8 @@ export default {
   stocks: `股票`,
   energy: `能源`,
   metals: `貴金屬`,
+  crypto: `加密貨幣`,
+
 
   tools: `交易工具`,
   marketNews: `市場資訊`,
@@ -51,6 +53,8 @@ export default {
   //Home
   trade: `交易`,
   futures: `期貨`,
+  cryptoCFDs: `加密貨幣CFDs`,
+
   shares: `股票`,
 
   carouselTitle: `新一代`,
@@ -390,6 +394,28 @@ export default {
   //tools
 
   //news
+  cryptoViewTitle: `加密貨幣差價合約交易`,
+  cryptoViewIntro: `我們的平臺為您提供多種加密貨幣交易機會，享受超低點差與極速成交體驗。`,
+  cryptoViewSubTitle: `全天候交易主流數字資產`,
+
+  cryptoText1Box: `7×24小時市場`,
+  cryptoText1Box1: `隨時交易比特幣、以太坊等加密資產`,
+  cryptoText1Box2: `高級交易工具`,
+  cryptoText1Box3: `支持杠桿、止損與投資組合管理`,
+  cryptoText1Box4: `實時市場洞察`,
+  cryptoText1Box5: `實時圖表、新聞與專家分析`,
+
+  cryptoBoxSentence: `為何選擇Kosmarkets交易加密貨幣？`,
+  cryptoBoxSentence1: `Kosmarkets提供具競爭力的加密貨幣交易環境與成本優勢。`,
+  cryptoBoxSentence2: `加密貨幣`,
+  cryptoBoxSentence3: `加密貨幣是一種去中心化的數字資產，其價格由市場需求與新聞驅動。`,
+  cryptoBoxSentence4: `交易`,
+  cryptoBoxSentence5: `在Kosmarkets，客戶可使用美元交易加密貨幣 CFD，并靈活選擇做多或做空。`,
+
+  //tools
+
+  //news
+
   marketNewsViewTitle: `市場資訊 · 外部接入`,
   marketNewsViewIntro: `我們為您提供全天候（24/7）的實時市場動態，覆蓋全球超過100個國家的最新資訊，助您及時掌握各類金融市場的重要信息。`,
   marketNewsViewSubTitle: `實時要聞，洞察市場動向`,

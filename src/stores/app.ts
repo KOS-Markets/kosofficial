@@ -60,6 +60,12 @@ export const useAppStore = defineStore('app', () => {
           icon: "Histogram",
         },
         {
+          name: "crypto",
+          subTitle: "cryptoViewSubTitle",
+          path: "marketsCrypto",
+          icon: "Money",
+        },
+        {
           name: "stocks",
           subTitle: "stocksViewSubTitle",
           path: "marketsStocks",
